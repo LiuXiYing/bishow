@@ -29,31 +29,31 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎙 按住即说</h3>
+      <h3>按住即说</h3>
       按住 <kbd>Fn</kbd> 或自定义快捷键，在任意输入框听写；双击可保持录音，再按结束。
     </td>
     <td width="50%" valign="top">
-      <h3>🔒 本机识别</h3>
+      <h3>本机识别</h3>
       Qwen3-ASR、Nemotron 等支持中文的模型在本地运行，Metal 加速，断网也能用。
     </td>
   </tr>
   <tr>
     <td valign="top">
-      <h3>✍️ 中文优先的润色</h3>
+      <h3>中文优先的润色</h3>
       内置中文提示词：去口癖、改错别字、补全角标点、识别自我纠正、口述数字与标点。
     </td>
     <td valign="top">
-      <h3>🇨🇳 国内可用的 AI</h3>
+      <h3>国内可用的 AI</h3>
       DeepSeek、Kimi、智谱、百炼、硅基流动、火山方舟开箱即选，也可填任意 OpenAI 兼容端点。
     </td>
   </tr>
   <tr>
     <td valign="top">
-      <h3>💬 按应用切换语气</h3>
+      <h3>按应用切换语气</h3>
       在 Slack 里口语化、在邮件里正式、在编辑器里保留标识符与大小写。
     </td>
     <td valign="top">
-      <h3>📚 词汇与历史</h3>
+      <h3>词汇与历史</h3>
       自定义词汇和语音片段一次配置、随说随用；历史记录可回看、复制、重新处理。
     </td>
   </tr>
@@ -137,8 +137,6 @@ git merge upstream/main
 | `assets/`    | 图标与 README 图片                             |
 | `website/`   | 上游网站源码（Next.js），尚未针对 Penshow 修改 |
 | `docs/`      | 文档与图片                                     |
-
-上游原始 README 保留在 [README.upstream.md](README.upstream.md)。
 
 </details>
 

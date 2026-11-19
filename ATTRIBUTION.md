@@ -22,7 +22,6 @@ Penshow is not affiliated with or endorsed by the original Hush author. The Hush
 - [LICENSE](LICENSE) 中的原始 MIT 版权与许可声明
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 中的第三方组件、字体和模型许可
 - Git 历史中的原始提交记录与作者信息
-- 原始 README 保留在 [README.upstream.md](README.upstream.md)
 
 ## Penshow 的修改 / Changes in Penshow
 
