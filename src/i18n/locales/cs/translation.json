@@ -29,7 +29,7 @@
     "customModelDescription": "Oficiálně nepodporováno",
     "migration": {
       "title": "Vaše modely potřebují aktualizaci",
-      "description": "Hush nyní používá novější typ modelů. Stáhněte si novou verzi, abyste mohli dál přepisovat. Staré verze budou odstraněny.",
+      "description": "Bishow nyní používá novější typ modelů. Stáhněte si novou verzi, abyste mohli dál přepisovat. Staré verze budou odstraněny.",
       "replaces": "Nahrazuje {{name}}",
       "oldFormat": "Starý formát",
       "failed": "Stahování selhalo",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Vyžadována oprávnění",
-      "description": "Hush potřebuje několik oprávnění pro správné fungování.",
+      "description": "Bishow potřebuje několik oprávnění pro správné fungování.",
       "microphone": {
         "title": "Přístup k mikrofonu",
         "description": "Potřebný pro zachycení vašeho hlasu k přepisu."
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} je váš aktivní model. Jeho smazáním se zastaví přepisy, dokud nevyberete nový model. Opravdu chcete pokračovat?",
       "deleteTitle": "Smazat model",
       "retiredNotice": {
-        "title": "Staré modely už s Hush nefungují",
+        "title": "Staré modely už s Bishow nefungují",
         "description": "Zabírají {{size}} na vašem počítači.",
         "delete": "Smazat modely",
         "deleted": "Staré modely byly smazány",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "Hledat modely podle názvu…",
       "rescan": {
         "label": "Znovu prohledat",
-        "tooltip": "Znovu prohledat modely přidané do složky modelů nebo mezipaměti Hugging Face mimo Hush"
+        "tooltip": "Znovu prohledat modely přidané do složky modelů nebo mezipaměti Hugging Face mimo Bishow"
       }
     },
     "general": {
       "title": "Obecné",
       "shortcut": {
-        "title": "Zkratky Hush",
+        "title": "Zkratky Bishow",
         "description": "Nastavte klávesové zkratky pro spuštění nahrávání řeči na text",
         "loading": "Načítám zkratky...",
         "none": "Žádné zkratky nejsou nastavené",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Spouštět při startu",
-        "description": "Automaticky spustit Hush po přihlášení do počítače."
+        "description": "Automaticky spustit Bishow po přihlášení do počítače."
       },
       "showTrayIcon": {
         "label": "Zobrazit ikonu v systémové liště",
-        "description": "Zobrazit ikonu Hush v systémové liště."
+        "description": "Zobrazit ikonu Bishow v systémové liště."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Styly podle aplikace",
-        "description": "Hush přizpůsobí úpravy aplikaci, do které diktujete. Styly platí jen se zapnutou úpravou AI.",
+        "description": "Bishow přizpůsobí úpravy aplikaci, do které diktujete. Styly platí jen se zapnutou úpravou AI.",
         "offNotice": "Úprava AI je vypnutá, takže se tyto styly zatím nepoužijí.",
         "default": {
           "title": "Výchozí styl",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Diagnostika klávesnice",
-        "description": "Ověří, zda události klávesnice dorazí do Hush. Zaznamenává se pouze počet událostí — nikdy to, které klávesy stisknete.",
+        "description": "Ověří, zda události klávesnice dorazí do Bishow. Zaznamenává se pouze počet událostí — nikdy to, které klávesy stisknete.",
         "run": "Spustit 10s diagnostiku",
         "running": "Naslouchání… několikrát stiskněte svou zkratku (např. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "Myš",
         "verdictBlocked": "Secure Input blokuje události kláves — zkratky obsahující běžnou klávesu nemohou fungovat, dokud se to nevyřeší.",
         "verdictSuspicious": "Dorazily události modifikátorů, ale žádné události kláves — něco klávesy potlačuje, přestože Secure Input hlásí, že je vypnutý. Nahlaste to prosím na GitHubu.",
-        "verdictOk": "Události kláves dorazí do Hush normálně.",
+        "verdictOk": "Události kláves dorazí do Bishow normálně.",
         "verdictNoEvents": "Nebyly zachyceny žádné události — stiskli jste během testu nějaké klávesy?",
         "failed": "Diagnostika selhala: {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "O aplikaci",
       "version": {
         "title": "Verze",
-        "description": "Aktuální verze Hush"
+        "description": "Aktuální verze Bishow"
       },
       "appDataDirectory": {
         "title": "Adresář dat aplikace",
-        "description": "Umístění, kde Hush ukládá data"
+        "description": "Umístění, kde Bishow ukládá data"
       },
       "sourceCode": {
         "title": "Zdrojový kód",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "Vysoce výkonné inferenční zpracování modelu automatického rozpoznávání řeči Whisper od OpenAI",
-          "details": "Hush používá ggml pro rychlé lokální zpracování řeči na text. Díky skvělé práci Georgiho Gerganova a přispěvatelů."
+          "details": "Bishow používá ggml pro rychlé lokální zpracování řeči na text. Díky skvělé práci Georgiho Gerganova a přispěvatelů."
         }
       },
       "whatsNewUpdates": {
         "label": "Zobrazovat novinky",
-        "description": "Zobrazovat poznámky k vydání po aktualizacích Hush"
+        "description": "Zobrazovat poznámky k vydání po aktualizacích Bishow"
       }
     },
     "snippets": {
       "title": "Hlasové úryvky",
-      "description": "Vyslovte spouštěcí frázi a Hush napíše její rozšíření. Na velikosti písmen a interpunkci nezáleží, takže „My email.“ spustí „my email“. Funguje to i uvnitř delších vět.",
+      "description": "Vyslovte spouštěcí frázi a Bishow napíše její rozšíření. Na velikosti písmen a interpunkci nezáleží, takže „My email.“ spustí „my email“. Funguje to i uvnitř delších vět.",
       "trigger": "Spouštěcí fráze",
       "triggerPlaceholder": "my email",
       "expansion": "Rozšíření",
@@ -738,7 +738,7 @@
     "noOptionsFound": "Nenalezeny žádné možnosti"
   },
   "accessibility": {
-    "permissionsDescription": "Hush potřebuje oprávnění usnadnění přístupu, aby mohlo psát přepsaný text.",
+    "permissionsDescription": "Bishow potřebuje oprávnění usnadnění přístupu, aby mohlo psát přepsaný text.",
     "openSettings": "Otevřít Nastavení systému"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "Jazyk aplikace",
-    "description": "Změňte jazyk rozhraní Hush"
+    "description": "Změňte jazyk rozhraní Bishow"
   },
   "theme": {
     "title": "Motiv aplikace",
-    "description": "Zvolte, zda má Hush sledovat motiv systému, nebo zůstat světlý či tmavý",
+    "description": "Zvolte, zda má Bishow sledovat motiv systému, nebo zůstat světlý či tmavý",
     "options": {
       "system": "Systém",
       "light": "Světlý",
@@ -778,7 +778,7 @@
     "loadingModel": "Načítání modelu..."
   },
   "whatsNew": {
-    "title": "Novinky v Hush v{{version}}"
+    "title": "Novinky v Bishow v{{version}}"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} může blokovat 1 zkratku",

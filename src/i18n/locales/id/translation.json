@@ -29,7 +29,7 @@
     "customModelDescription": "Tidak didukung secara resmi",
     "migration": {
       "title": "Model Anda perlu diperbarui",
-      "description": "Hush kini menggunakan jenis model yang lebih baru. Unduh versi baru untuk terus mentranskripsi. Versi lama akan dihapus.",
+      "description": "Bishow kini menggunakan jenis model yang lebih baru. Unduh versi baru untuk terus mentranskripsi. Versi lama akan dihapus.",
       "replaces": "Menggantikan {{name}}",
       "oldFormat": "Format lama",
       "failed": "Unduhan gagal",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Izin Diperlukan",
-      "description": "Hush memerlukan beberapa izin agar dapat berfungsi dengan baik.",
+      "description": "Bishow memerlukan beberapa izin agar dapat berfungsi dengan baik.",
       "microphone": {
         "title": "Akses Mikrofon",
         "description": "Diperlukan untuk menangkap suara Anda agar dapat ditranskripsikan."
@@ -127,7 +127,7 @@
     "general": {
       "title": "Umum",
       "shortcut": {
-        "title": "Pintasan Hush",
+        "title": "Pintasan Bishow",
         "description": "Atur pintasan keyboard untuk memulai perekaman ucapan-ke-teks",
         "loading": "Memuat pintasan...",
         "none": "Belum ada pintasan yang diatur",
@@ -194,7 +194,7 @@
       "deleteActiveConfirm": "{{modelName}} adalah model aktif Anda. Menghapusnya akan menghentikan transkripsi sampai Anda memilih model baru. Yakin ingin melanjutkan?",
       "deleteTitle": "Hapus Model",
       "retiredNotice": {
-        "title": "Model lama tidak lagi berfungsi dengan Hush",
+        "title": "Model lama tidak lagi berfungsi dengan Bishow",
         "description": "Model tersebut memakan {{size}} di komputer Anda.",
         "delete": "Hapus model",
         "deleted": "Model lama telah dihapus",
@@ -207,7 +207,7 @@
       },
       "rescan": {
         "label": "Pindai Ulang",
-        "tooltip": "Pindai ulang model yang ditambahkan ke folder model atau cache Hugging Face dari luar Hush"
+        "tooltip": "Pindai ulang model yang ditambahkan ke folder model atau cache Hugging Face dari luar Bishow"
       },
       "noModelsMatch": "Tidak ada model yang cocok dengan kriteria ini."
     },
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Jalankan saat Komputer Dinyalakan",
-        "description": "Mulai Hush secara otomatis saat Anda masuk ke komputer."
+        "description": "Mulai Bishow secara otomatis saat Anda masuk ke komputer."
       },
       "showTrayIcon": {
         "label": "Tampilkan Ikon Baki Sistem",
-        "description": "Tampilkan ikon Hush di baki sistem."
+        "description": "Tampilkan ikon Bishow di baki sistem."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Gaya per aplikasi",
-        "description": "Hush menyesuaikan perapian dengan aplikasi tempat Anda mendikte. Gaya hanya berlaku saat Perapian AI aktif.",
+        "description": "Bishow menyesuaikan perapian dengan aplikasi tempat Anda mendikte. Gaya hanya berlaku saat Perapian AI aktif.",
         "offNotice": "Perapian AI nonaktif, jadi gaya ini belum diterapkan.",
         "default": {
           "title": "Gaya bawaan",
@@ -626,7 +626,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Diagnostik Keyboard",
-        "description": "Memeriksa apakah peristiwa keyboard mencapai Hush. Hanya jumlah peristiwa yang dicatat — bukan tombol yang Anda tekan.",
+        "description": "Memeriksa apakah peristiwa keyboard mencapai Bishow. Hanya jumlah peristiwa yang dicatat — bukan tombol yang Anda tekan.",
         "run": "Jalankan diagnostik 10 dtk",
         "running": "Mendengarkan… tekan pintasan Anda beberapa kali (mis. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -640,7 +640,7 @@
         "mouse": "Mouse",
         "verdictBlocked": "Secure Input memblokir peristiwa tombol — pintasan keyboard tidak dapat berfungsi sampai masalah ini diselesaikan.",
         "verdictSuspicious": "Peristiwa tombol pengubah diterima, tetapi tidak ada peristiwa tombol — sesuatu memblokir input tombol meskipun Secure Input dilaporkan nonaktif. Harap laporkan ini di GitHub.",
-        "verdictOk": "Peristiwa tombol mencapai Hush secara normal.",
+        "verdictOk": "Peristiwa tombol mencapai Bishow secara normal.",
         "verdictNoEvents": "Tidak ada peristiwa yang tertangkap — apakah Anda menekan tombol selama pengujian?",
         "failed": "Diagnostik gagal: {{error}}"
       }
@@ -649,15 +649,15 @@
       "title": "Tentang",
       "version": {
         "title": "Versi",
-        "description": "Versi Hush saat ini"
+        "description": "Versi Bishow saat ini"
       },
       "whatsNewUpdates": {
         "label": "Tampilkan Yang Baru",
-        "description": "Tampilkan catatan rilis setelah Hush diperbarui"
+        "description": "Tampilkan catatan rilis setelah Bishow diperbarui"
       },
       "appDataDirectory": {
         "title": "Direktori Data Aplikasi",
-        "description": "Lokasi Hush menyimpan datanya"
+        "description": "Lokasi Bishow menyimpan datanya"
       },
       "sourceCode": {
         "title": "Kode Sumber",
@@ -669,13 +669,13 @@
         "ggml": {
           "title": "ggml",
           "description": "Pustaka tensor berkinerja tinggi untuk inferensi pembelajaran mesin di perangkat",
-          "details": "Fitur ucapan-ke-teks lokal Hush dibangun menggunakan transcribe.cpp dan ggml. Terima kasih kepada Georgi Gerganov dan para kontributor atas karya luar biasa mereka."
+          "details": "Fitur ucapan-ke-teks lokal Bishow dibangun menggunakan transcribe.cpp dan ggml. Terima kasih kepada Georgi Gerganov dan para kontributor atas karya luar biasa mereka."
         }
       }
     },
     "snippets": {
       "title": "Cuplikan suara",
-      "description": "Ucapkan frasa pemicu dan Hush mengetik teks lengkapnya. Huruf kapital dan tanda baca tidak berpengaruh, jadi “My email.” memicu “my email”. Juga berfungsi di tengah kalimat panjang.",
+      "description": "Ucapkan frasa pemicu dan Bishow mengetik teks lengkapnya. Huruf kapital dan tanda baca tidak berpengaruh, jadi “My email.” memicu “my email”. Juga berfungsi di tengah kalimat panjang.",
       "trigger": "Frasa pemicu",
       "triggerPlaceholder": "my email",
       "expansion": "Teks lengkap",
@@ -728,7 +728,7 @@
     "portableUpdateBrowseButton": "Buka GitHub Releases"
   },
   "whatsNew": {
-    "title": "Baru di Hush v{{version}}"
+    "title": "Baru di Bishow v{{version}}"
   },
   "common": {
     "loading": "Memuat...",
@@ -741,7 +741,7 @@
     "noOptionsFound": "Tidak ada opsi yang ditemukan"
   },
   "accessibility": {
-    "permissionsDescription": "Hush memerlukan izin aksesibilitas untuk mengetik teks hasil transkripsi.",
+    "permissionsDescription": "Bishow memerlukan izin aksesibilitas untuk mengetik teks hasil transkripsi.",
     "openSettings": "Buka Pengaturan Sistem"
   },
   "errors": {
@@ -764,11 +764,11 @@
   },
   "appLanguage": {
     "title": "Bahasa Aplikasi",
-    "description": "Ubah bahasa antarmuka Hush"
+    "description": "Ubah bahasa antarmuka Bishow"
   },
   "theme": {
     "title": "Tema Aplikasi",
-    "description": "Pilih apakah Hush mengikuti tema sistem atau selalu menggunakan tema terang atau gelap",
+    "description": "Pilih apakah Bishow mengikuti tema sistem atau selalu menggunakan tema terang atau gelap",
     "options": {
       "system": "Sistem",
       "light": "Terang",

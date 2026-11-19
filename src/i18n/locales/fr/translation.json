@@ -29,7 +29,7 @@
     "customModelDescription": "Non officiellement pris en charge",
     "migration": {
       "title": "Vos modèles doivent être mis à jour",
-      "description": "Hush utilise désormais un nouveau type de modèle. Téléchargez la nouvelle version pour continuer à transcrire. Les anciennes versions seront supprimées.",
+      "description": "Bishow utilise désormais un nouveau type de modèle. Téléchargez la nouvelle version pour continuer à transcrire. Les anciennes versions seront supprimées.",
       "replaces": "Remplace {{name}}",
       "oldFormat": "Ancien format",
       "failed": "Échec du téléchargement",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Autorisations requises",
-      "description": "Hush a besoin de quelques autorisations pour fonctionner correctement.",
+      "description": "Bishow a besoin de quelques autorisations pour fonctionner correctement.",
       "microphone": {
         "title": "Accès au microphone",
         "description": "Nécessaire pour entendre votre voix pour la transcription."
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} est votre modèle actif. Le supprimer arrêtera les transcriptions jusqu'à ce que vous sélectionniez un nouveau modèle. Êtes-vous sûr ?",
       "deleteTitle": "Supprimer le modèle",
       "retiredNotice": {
-        "title": "Les anciens modèles ne fonctionnent plus avec Hush",
+        "title": "Les anciens modèles ne fonctionnent plus avec Bishow",
         "description": "Ils occupent {{size}} sur votre ordinateur.",
         "delete": "Supprimer les modèles",
         "deleted": "Anciens modèles supprimés",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "Rechercher des modèles par nom…",
       "rescan": {
         "label": "Réanalyser",
-        "tooltip": "Réanalyser pour détecter les modèles ajoutés au dossier des modèles ou au cache Hugging Face en dehors de Hush"
+        "tooltip": "Réanalyser pour détecter les modèles ajoutés au dossier des modèles ou au cache Hugging Face en dehors de Bishow"
       }
     },
     "general": {
       "title": "Général",
       "shortcut": {
-        "title": "Raccourcis Hush",
+        "title": "Raccourcis Bishow",
         "description": "Configurer les raccourcis clavier pour déclencher l'enregistrement de la reconnaissance vocale",
         "loading": "Chargement des raccourcis...",
         "none": "Aucun raccourci configuré",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Lancer au démarrage",
-        "description": "Démarrer automatiquement Hush lorsque vous vous connectez à votre ordinateur."
+        "description": "Démarrer automatiquement Bishow lorsque vous vous connectez à votre ordinateur."
       },
       "showTrayIcon": {
         "label": "Afficher l'icône de la barre",
-        "description": "Afficher l'icône de Hush dans la barre système."
+        "description": "Afficher l'icône de Bishow dans la barre système."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Styles par app",
-        "description": "Hush adapte le nettoyage à l’app dans laquelle vous dictez. Les styles ne s’appliquent que si le nettoyage IA est activé.",
+        "description": "Bishow adapte le nettoyage à l’app dans laquelle vous dictez. Les styles ne s’appliquent que si le nettoyage IA est activé.",
         "offNotice": "Le nettoyage IA est désactivé : ces styles ne sont pas encore appliqués.",
         "default": {
           "title": "Style par défaut",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Diagnostic du clavier",
-        "description": "Vérifie si les événements clavier atteignent Hush. Seul le nombre d'événements est enregistré, jamais les touches sur lesquelles vous appuyez.",
+        "description": "Vérifie si les événements clavier atteignent Bishow. Seul le nombre d'événements est enregistré, jamais les touches sur lesquelles vous appuyez.",
         "run": "Lancer un diagnostic de 10 s",
         "running": "Écoute en cours… appuyez plusieurs fois sur votre raccourci (par ex. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "Souris",
         "verdictBlocked": "Secure Input bloque les événements clavier : les raccourcis contenant une touche normale ne peuvent pas fonctionner tant que ce n'est pas résolu.",
         "verdictSuspicious": "Des événements de modificateurs sont arrivés, mais aucun événement de touche : quelque chose supprime les touches alors que Secure Input est signalé comme désactivé. Merci de le signaler sur GitHub.",
-        "verdictOk": "Les événements clavier atteignent Hush normalement.",
+        "verdictOk": "Les événements clavier atteignent Bishow normalement.",
         "verdictNoEvents": "Aucun événement capturé : avez-vous appuyé sur des touches pendant le test ?",
         "failed": "Échec du diagnostic : {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "À propos",
       "version": {
         "title": "Version",
-        "description": "Version actuelle de Hush"
+        "description": "Version actuelle de Bishow"
       },
       "appDataDirectory": {
         "title": "Emplacement des données de l'application",
-        "description": "Emplacement où Hush stocke ses données"
+        "description": "Emplacement où Bishow stocke ses données"
       },
       "sourceCode": {
         "title": "Code source",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "Inférence haute performance du modèle de reconnaissance vocale automatique Whisper d'OpenAI",
-          "details": "Hush utilise ggml pour un traitement rapide et local de la parole en texte. Merci au travail incroyable de Georgi Gerganov et des contributeurs."
+          "details": "Bishow utilise ggml pour un traitement rapide et local de la parole en texte. Merci au travail incroyable de Georgi Gerganov et des contributeurs."
         }
       },
       "whatsNewUpdates": {
         "label": "Afficher les nouveautés",
-        "description": "Afficher les notes de version après les mises à jour de Hush"
+        "description": "Afficher les notes de version après les mises à jour de Bishow"
       }
     },
     "snippets": {
       "title": "Raccourcis vocaux",
-      "description": "Dites une phrase déclencheur et Hush tape le texte associé. Majuscules et ponctuation n’ont pas d’importance : « My email. » déclenche « my email ». Fonctionne aussi au milieu d’une phrase.",
+      "description": "Dites une phrase déclencheur et Bishow tape le texte associé. Majuscules et ponctuation n’ont pas d’importance : « My email. » déclenche « my email ». Fonctionne aussi au milieu d’une phrase.",
       "trigger": "Phrase déclencheur",
       "triggerPlaceholder": "my email",
       "expansion": "Texte associé",
@@ -738,7 +738,7 @@
     "noOptionsFound": "Aucune option trouvée"
   },
   "accessibility": {
-    "permissionsDescription": "Hush a besoin des autorisations d'accessibilité pour taper le texte transcrit.",
+    "permissionsDescription": "Bishow a besoin des autorisations d'accessibilité pour taper le texte transcrit.",
     "openSettings": "Ouvrir les Préférences Système"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "Langue de l'application",
-    "description": "Changer la langue de l'interface de Hush"
+    "description": "Changer la langue de l'interface de Bishow"
   },
   "theme": {
     "title": "Thème de l'application",
-    "description": "Choisissez si Hush suit le thème du système ou reste clair ou sombre",
+    "description": "Choisissez si Bishow suit le thème du système ou reste clair ou sombre",
     "options": {
       "system": "Système",
       "light": "Clair",
@@ -778,7 +778,7 @@
     "loadingModel": "Chargement du modèle..."
   },
   "whatsNew": {
-    "title": "Nouveautés de Hush v{{version}}"
+    "title": "Nouveautés de Bishow v{{version}}"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} bloque peut-être 1 raccourci",

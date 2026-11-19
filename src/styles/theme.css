@@ -1,5 +1,5 @@
 /*
- * Hush design tokens — the single source of truth for colour.
+ * Bishow design tokens — the single source of truth for colour.
  *
  * Every themed value is defined once per scheme below as a semantic
  * `--hush-*` variable. `App.css` registers them as Tailwind colours
@@ -9,8 +9,8 @@
  * variables, so every component inherits the palette without per-component
  * overrides.
  *
- * Light: cream paper with the Hush brand red.
- * Dark: warm charcoal (not neutral grey) with a lifted red that stays legible.
+ * Light: rice paper with ink text and a cinnabar seal accent.
+ * Dark: ink black with a lifted cinnabar that stays legible.
  *
  * Scheme selection: follows the OS by default; the Appearance setting forces
  * one via `data-theme` on <html>. This file is imported by both the settings
@@ -18,31 +18,31 @@
  */
 
 :root {
-  /* ---- Light ---------------------------------------------------------- */
-  --hush-light-bg: #e9e2d0;
-  --hush-light-surface: #f1ecdf;
-  --hush-light-surface-raised: #f8f5ee;
-  --hush-light-border: #cfc5ae;
-  --hush-light-text: #1a1410;
-  --hush-light-text-muted: #5a5040; /* 6.7:1 on surface, 5.8:1 on bg (AA) */
-  --hush-light-accent: #8b3030;
+  /* ---- Light (rice paper) --------------------------------------------- */
+  --hush-light-bg: #f2ebdc;
+  --hush-light-surface: #f8f3e8;
+  --hush-light-surface-raised: #fdfaf3;
+  --hush-light-border: #d8cdb7;
+  --hush-light-text: #1c1917;
+  --hush-light-text-muted: #5c5346; /* 6.4:1 on surface, 5.6:1 on bg (AA) */
+  --hush-light-accent: #a63a32;
   --hush-light-accent-contrast: #fdf8f1;
-  --hush-light-danger: #b42318;
-  --hush-light-warning: #a15c07;
-  --hush-light-success: #2f6b3a;
+  --hush-light-danger: #b3261e;
+  --hush-light-warning: #9a6b12;
+  --hush-light-success: #4f6f5a;
 
-  /* ---- Dark (warm charcoal) ------------------------------------------- */
-  --hush-dark-bg: #1d1916;
-  --hush-dark-surface: #26211d;
-  --hush-dark-surface-raised: #2f2924;
-  --hush-dark-border: #443b33;
-  --hush-dark-text: #ece4d4;
-  --hush-dark-text-muted: #a8997f;
-  --hush-dark-accent: #d26a5c;
-  --hush-dark-accent-contrast: #1d1916;
-  --hush-dark-danger: #f2877a;
-  --hush-dark-warning: #e8b45a;
-  --hush-dark-success: #86c48f;
+  /* ---- Dark (ink) ------------------------------------------------------ */
+  --hush-dark-bg: #17140f;
+  --hush-dark-surface: #211d17;
+  --hush-dark-surface-raised: #2a251e;
+  --hush-dark-border: #40382d;
+  --hush-dark-text: #ede4d3;
+  --hush-dark-text-muted: #a99b84;
+  --hush-dark-accent: #d9776a;
+  --hush-dark-accent-contrast: #17140f;
+  --hush-dark-danger: #f08a7e;
+  --hush-dark-warning: #e0b05a;
+  --hush-dark-success: #9cc0a8;
 
   /* ---- Active scheme (light by default) ------------------------------- */
   --hush-bg: var(--hush-light-bg);
@@ -109,9 +109,12 @@
  */
 :root {
   --hush-font-sans:
-    "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", "Segoe UI",
     sans-serif;
-  --hush-font-display: "DM Serif Display", "Iowan Old Style", Georgia, serif;
+  --hush-font-display:
+    "DM Serif Display", "Songti SC", "STSong", "Noto Serif SC",
+    "Source Han Serif SC", "Iowan Old Style", Georgia, serif;
 
   --color-text: var(--hush-text);
   --color-background: var(--hush-bg);

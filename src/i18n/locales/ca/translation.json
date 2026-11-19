@@ -29,7 +29,7 @@
     "customModelDescription": "Sense suport oficial",
     "migration": {
       "title": "Cal actualitzar els vostres models",
-      "description": "Hush ara utilitza un tipus de model més nou. Baixeu la versió nova per continuar transcrivint. Les versions antigues s'eliminaran.",
+      "description": "Bishow ara utilitza un tipus de model més nou. Baixeu la versió nova per continuar transcrivint. Les versions antigues s'eliminaran.",
       "replaces": "Substitueix {{name}}",
       "oldFormat": "Format antic",
       "failed": "Ha fallat la baixada",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Permisos necessaris",
-      "description": "El Hush demana alguns permisos per funcionar correctament.",
+      "description": "El Bishow demana alguns permisos per funcionar correctament.",
       "microphone": {
         "title": "Accés al micròfon",
         "description": "Necessari per escoltar la vostra veu i transcriure-la."
@@ -127,7 +127,7 @@
     "general": {
       "title": "General",
       "shortcut": {
-        "title": "Dreceres del Hush",
+        "title": "Dreceres del Bishow",
         "description": "Configura les dreceres de teclat per iniciar l'enregistrament de veu per a la transcripció",
         "loading": "S'estan carregant les dreceres...",
         "none": "No hi ha cap drecera configurada",
@@ -194,7 +194,7 @@
       "deleteActiveConfirm": "{{modelName}} és el model actiu. Si el suprimiu, no podreu fer transcripcions fins que seleccioneu un altre model. N'esteu segur?",
       "deleteTitle": "Suprimeix el model",
       "retiredNotice": {
-        "title": "Els models antics ja no funcionen amb Hush",
+        "title": "Els models antics ja no funcionen amb Bishow",
         "description": "Ocupen {{size}} a l'ordinador.",
         "delete": "Suprimeix els models",
         "deleted": "S'han suprimit els models antics",
@@ -207,7 +207,7 @@
       },
       "rescan": {
         "label": "Torna a cercar",
-        "tooltip": "Torna a cercar models afegits a la carpeta de models o a la memòria cau de Hugging Face des de fora del Hush"
+        "tooltip": "Torna a cercar models afegits a la carpeta de models o a la memòria cau de Hugging Face des de fora del Bishow"
       },
       "noModelsMatch": "Cap model no coincideix amb aquest filtre."
     },
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Inicia en entrar a la sessió",
-        "description": "Inicia automàticament el Hush quan entreu a la sessió de l'ordinador."
+        "description": "Inicia automàticament el Bishow quan entreu a la sessió de l'ordinador."
       },
       "showTrayIcon": {
         "label": "Mostra la icona a la safata",
-        "description": "Mostra la icona del Hush a la safata del sistema."
+        "description": "Mostra la icona del Bishow a la safata del sistema."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Estils per aplicació",
-        "description": "Hush adapta la neteja a l’aplicació on dictes. Els estils només s’apliquen quan la neteja amb IA està activada.",
+        "description": "Bishow adapta la neteja a l’aplicació on dictes. Els estils només s’apliquen quan la neteja amb IA està activada.",
         "offNotice": "La neteja amb IA està desactivada, així que aquests estils encara no s’apliquen.",
         "default": {
           "title": "Estil per defecte",
@@ -626,7 +626,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Diagnòstic del teclat",
-        "description": "Comprova si els esdeveniments del teclat arriben al Hush. Només se'n registra el recompte, mai les tecles que premeu.",
+        "description": "Comprova si els esdeveniments del teclat arriben al Bishow. Només se'n registra el recompte, mai les tecles que premeu.",
         "run": "Executa un diagnòstic de 10 s",
         "running": "S'està escoltant… prema la drecera unes quantes vegades (p. ex., Option+Space)",
         "secureInputLabel": "Entrada segura",
@@ -640,7 +640,7 @@
         "mouse": "Ratolí",
         "verdictBlocked": "L'entrada segura bloca els esdeveniments de tecla. Les dreceres amb tecles no poden funcionar fins que es resolgui.",
         "verdictSuspicious": "Han arribat esdeveniments de modificadors, però no de tecles. Alguna cosa suprimeix les tecles tot i que l'entrada segura consta com a desactivada. Informeu-ne al GitHub.",
-        "verdictOk": "Els esdeveniments de tecla arriben al Hush amb normalitat.",
+        "verdictOk": "Els esdeveniments de tecla arriben al Bishow amb normalitat.",
         "verdictNoEvents": "No s'ha capturat cap esdeveniment. Heu premut alguna tecla durant la prova?",
         "failed": "El diagnòstic ha fallat: {{error}}"
       }
@@ -649,15 +649,15 @@
       "title": "Quant a",
       "version": {
         "title": "Versió",
-        "description": "Versió actual del Hush"
+        "description": "Versió actual del Bishow"
       },
       "whatsNewUpdates": {
         "label": "Mostra les novetats",
-        "description": "Mostra les notes de la versió després d'actualitzar el Hush"
+        "description": "Mostra les notes de la versió després d'actualitzar el Bishow"
       },
       "appDataDirectory": {
         "title": "Directori de dades de l'aplicació",
-        "description": "Ubicació on el Hush desa les dades"
+        "description": "Ubicació on el Bishow desa les dades"
       },
       "sourceCode": {
         "title": "Codi font",
@@ -669,13 +669,13 @@
         "ggml": {
           "title": "ggml",
           "description": "Biblioteca de tensors d'alt rendiment per a la inferència d'aprenentatge automàtic al dispositiu",
-          "details": "La transcripció local de veu a text del Hush es basa en el transcribe.cpp i el ggml. Gràcies a la gran feina de Georgi Gerganov i dels col·laboradors."
+          "details": "La transcripció local de veu a text del Bishow es basa en el transcribe.cpp i el ggml. Gràcies a la gran feina de Georgi Gerganov i dels col·laboradors."
         }
       }
     },
     "snippets": {
       "title": "Fragments de veu",
-      "description": "Digues la frase activadora i Hush escriu l’expansió. Les majúscules i la puntuació no importen: «My email.» activa «my email». També funciona dins de frases més llargues.",
+      "description": "Digues la frase activadora i Bishow escriu l’expansió. Les majúscules i la puntuació no importen: «My email.» activa «my email». També funciona dins de frases més llargues.",
       "trigger": "Frase activadora",
       "triggerPlaceholder": "my email",
       "expansion": "Expansió",
@@ -728,7 +728,7 @@
     "portableUpdateBrowseButton": "Obriu GitHub Releases"
   },
   "whatsNew": {
-    "title": "Novetats del Hush v{{version}}"
+    "title": "Novetats del Bishow v{{version}}"
   },
   "common": {
     "loading": "S'està carregant...",
@@ -741,7 +741,7 @@
     "noOptionsFound": "No s'ha trobat cap opció"
   },
   "accessibility": {
-    "permissionsDescription": "El Hush necessita permisos d'accessibilitat per escriure el text transcrit.",
+    "permissionsDescription": "El Bishow necessita permisos d'accessibilitat per escriure el text transcrit.",
     "openSettings": "Obriu la configuració del sistema"
   },
   "errors": {
@@ -764,11 +764,11 @@
   },
   "appLanguage": {
     "title": "Llengua de l'aplicació",
-    "description": "Canvia la llengua de la interfície del Hush"
+    "description": "Canvia la llengua de la interfície del Bishow"
   },
   "theme": {
     "title": "Tema de l'aplicació",
-    "description": "Tria si el Hush segueix el tema del sistema o es manté en mode clar o fosc",
+    "description": "Tria si el Bishow segueix el tema del sistema o es manté en mode clar o fosc",
     "options": {
       "system": "Sistema",
       "light": "Clar",

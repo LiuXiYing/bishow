@@ -28,6 +28,9 @@ Bishow is not affiliated with or endorsed by the original Hush author. The Hush 
 
 - 仓库与产品品牌：Bishow / 笔受，标语「闻其言，成其文。」
 - 修复中文听写因按空格计词而跳过 AI 润色的问题
+- 新的中式应用图标与菜单栏图标
+- 「宣纸 + 墨 + 朱砂」配色与中文宋体标题回退
+- 应用内品牌文案更新为 Bishow
 - 后续修改记录在本仓库的提交历史中
 
 ## 说明 / Notes

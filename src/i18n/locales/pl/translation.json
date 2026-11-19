@@ -29,7 +29,7 @@
     "customModelDescription": "Nieoficjalnie wspierane",
     "migration": {
       "title": "Twoje modele wymagają aktualizacji",
-      "description": "Hush używa teraz nowszego rodzaju modeli. Pobierz nową wersję, aby dalej korzystać z transkrypcji. Stare wersje zostaną usunięte.",
+      "description": "Bishow używa teraz nowszego rodzaju modeli. Pobierz nową wersję, aby dalej korzystać z transkrypcji. Stare wersje zostaną usunięte.",
       "replaces": "Zastępuje {{name}}",
       "oldFormat": "Stary format",
       "failed": "Pobieranie nie powiodło się",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Wymagane uprawnienia",
-      "description": "Hush potrzebuje kilku uprawnień, aby działać poprawnie.",
+      "description": "Bishow potrzebuje kilku uprawnień, aby działać poprawnie.",
       "microphone": {
         "title": "Dostęp do mikrofonu",
         "description": "Wymagany do słyszenia Twojego głosu w celu transkrypcji."
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} jest Twoim aktywnym modelem. Usunięcie go zatrzyma transkrypcje, dopóki nie wybierzesz nowego modelu. Czy na pewno chcesz kontynuować?",
       "deleteTitle": "Usuń model",
       "retiredNotice": {
-        "title": "Stare modele nie działają już z Hush",
+        "title": "Stare modele nie działają już z Bishow",
         "description": "Zajmują {{size}} na Twoim komputerze.",
         "delete": "Usuń modele",
         "deleted": "Usunięto stare modele",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "Szukaj modeli według nazwy…",
       "rescan": {
         "label": "Skanuj ponownie",
-        "tooltip": "Skanuj ponownie w poszukiwaniu modeli dodanych do folderu modeli lub pamięci podręcznej Hugging Face poza Hush"
+        "tooltip": "Skanuj ponownie w poszukiwaniu modeli dodanych do folderu modeli lub pamięci podręcznej Hugging Face poza Bishow"
       }
     },
     "general": {
       "title": "Ogólne",
       "shortcut": {
-        "title": "Skróty Hush",
+        "title": "Skróty Bishow",
         "description": "Skonfiguruj skróty klawiaturowe do uruchamiania nagrywania mowy",
         "loading": "Wczytywanie skrótów...",
         "none": "Brak skonfigurowanych skrótów",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Uruchamiaj przy starcie",
-        "description": "Automatycznie uruchamiaj Hush po zalogowaniu."
+        "description": "Automatycznie uruchamiaj Bishow po zalogowaniu."
       },
       "showTrayIcon": {
         "label": "Pokaż ikonę w zasobniku",
-        "description": "Wyświetlaj ikonę Hush w zasobniku systemowym."
+        "description": "Wyświetlaj ikonę Bishow w zasobniku systemowym."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Style dla aplikacji",
-        "description": "Hush dopasowuje porządkowanie do aplikacji, w której dyktujesz. Style działają tylko przy włączonym porządkowaniu AI.",
+        "description": "Bishow dopasowuje porządkowanie do aplikacji, w której dyktujesz. Style działają tylko przy włączonym porządkowaniu AI.",
         "offNotice": "Porządkowanie AI jest wyłączone, więc te style nie są jeszcze stosowane.",
         "default": {
           "title": "Styl domyślny",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Diagnostyka klawiatury",
-        "description": "Sprawdza, czy zdarzenia klawiatury docierają do Hush. Zapisywana jest tylko liczba zdarzeń — nigdy to, które klawisze naciskasz.",
+        "description": "Sprawdza, czy zdarzenia klawiatury docierają do Bishow. Zapisywana jest tylko liczba zdarzeń — nigdy to, które klawisze naciskasz.",
         "run": "Uruchom 10-sekundową diagnostykę",
         "running": "Nasłuchiwanie… naciśnij swój skrót kilka razy (np. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "Mysz",
         "verdictBlocked": "Secure Input blokuje zdarzenia klawiszy — skróty zawierające zwykły klawisz nie zadziałają, dopóki nie zostanie to rozwiązane.",
         "verdictSuspicious": "Dotarły zdarzenia modyfikatorów, ale żadnych zdarzeń klawiszy — coś tłumi klawisze, mimo że Secure Input jest zgłaszany jako wyłączony. Zgłoś to na GitHubie.",
-        "verdictOk": "Zdarzenia klawiszy docierają do Hush normalnie.",
+        "verdictOk": "Zdarzenia klawiszy docierają do Bishow normalnie.",
         "verdictNoEvents": "Nie przechwycono żadnych zdarzeń — czy w trakcie testu naciśnięto jakieś klawisze?",
         "failed": "Diagnostyka nie powiodła się: {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "O programie",
       "version": {
         "title": "Wersja",
-        "description": "Aktualna wersja Hush"
+        "description": "Aktualna wersja Bishow"
       },
       "appDataDirectory": {
         "title": "Katalog danych aplikacji",
-        "description": "Miejsce, gdzie Hush przechowuje swoje dane"
+        "description": "Miejsce, gdzie Bishow przechowuje swoje dane"
       },
       "sourceCode": {
         "title": "Kod źródłowy",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "Wydajne wykonywanie modelu rozpoznawania mowy Whisper od OpenAI",
-          "details": "Hush używa ggml do szybkiego, lokalnego przetwarzania mowy na tekst. Dzięki niesamowitej pracy Georgi Gerganova i współtwórców."
+          "details": "Bishow używa ggml do szybkiego, lokalnego przetwarzania mowy na tekst. Dzięki niesamowitej pracy Georgi Gerganova i współtwórców."
         }
       },
       "whatsNewUpdates": {
         "label": "Pokaż nowości",
-        "description": "Pokazuj informacje o wydaniu po aktualizacjach Hush"
+        "description": "Pokazuj informacje o wydaniu po aktualizacjach Bishow"
       }
     },
     "snippets": {
       "title": "Fragmenty głosowe",
-      "description": "Powiedz frazę wyzwalającą, a Hush wpisze rozwinięcie. Wielkość liter i interpunkcja nie mają znaczenia, więc „My email.” uruchomi „my email”. Działa też w dłuższych zdaniach.",
+      "description": "Powiedz frazę wyzwalającą, a Bishow wpisze rozwinięcie. Wielkość liter i interpunkcja nie mają znaczenia, więc „My email.” uruchomi „my email”. Działa też w dłuższych zdaniach.",
       "trigger": "Fraza wyzwalająca",
       "triggerPlaceholder": "my email",
       "expansion": "Rozwinięcie",
@@ -738,7 +738,7 @@
     "noOptionsFound": "Nie znaleziono opcji"
   },
   "accessibility": {
-    "permissionsDescription": "Hush potrzebuje uprawnień dostępności, aby wpisywać transkrybowany tekst.",
+    "permissionsDescription": "Bishow potrzebuje uprawnień dostępności, aby wpisywać transkrybowany tekst.",
     "openSettings": "Otwórz ustawienia systemowe"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "Język aplikacji",
-    "description": "Zmień język interfejsu Hush"
+    "description": "Zmień język interfejsu Bishow"
   },
   "theme": {
     "title": "Motyw aplikacji",
-    "description": "Wybierz, czy Hush ma podążać za motywem systemu, czy pozostać jasny lub ciemny",
+    "description": "Wybierz, czy Bishow ma podążać za motywem systemu, czy pozostać jasny lub ciemny",
     "options": {
       "system": "System",
       "light": "Jasny",
@@ -778,7 +778,7 @@
     "loadingModel": "Wczytywanie modelu..."
   },
   "whatsNew": {
-    "title": "Nowości w Hush v{{version}}"
+    "title": "Nowości w Bishow v{{version}}"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} może blokować 1 skrót",

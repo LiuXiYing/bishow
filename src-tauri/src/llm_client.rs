@@ -189,7 +189,7 @@ fn build_headers(provider: &PostProcessProvider, api_key: &str) -> Result<Header
     headers.insert(
         USER_AGENT,
         HeaderValue::from_static(concat!(
-            "Hush/",
+            "Bishow/",
             env!("CARGO_PKG_VERSION"),
             " (+https://hush.software)"
         )),

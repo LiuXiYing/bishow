@@ -29,7 +29,7 @@
     "customModelDescription": "公式サポート対象外",
     "migration": {
       "title": "モデルの更新が必要です",
-      "description": "Hush は新しい種類のモデルを使用するようになりました。文字起こしを続けるには、新しいバージョンをダウンロードしてください。古いバージョンは削除されます。",
+      "description": "Bishow は新しい種類のモデルを使用するようになりました。文字起こしを続けるには、新しいバージョンをダウンロードしてください。古いバージョンは削除されます。",
       "replaces": "{{name}} の後継",
       "oldFormat": "旧形式",
       "failed": "ダウンロードに失敗しました",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "権限が必要です",
-      "description": "Hush が正常に動作するにはいくつかの権限が必要です。",
+      "description": "Bishow が正常に動作するにはいくつかの権限が必要です。",
       "microphone": {
         "title": "マイクへのアクセス",
         "description": "文字起こしのためにあなたの声を聞くために必要です。"
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}}は現在使用中のモデルです。削除すると、新しいモデルを選択するまで文字起こしが停止します。本当に削除しますか?",
       "deleteTitle": "モデルを削除",
       "retiredNotice": {
-        "title": "古いモデルは Hush で使用できなくなりました",
+        "title": "古いモデルは Bishow で使用できなくなりました",
         "description": "コンピューター上で {{size}} を使用しています。",
         "delete": "モデルを削除",
         "deleted": "古いモデルを削除しました",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "モデルを名前で検索…",
       "rescan": {
         "label": "再スキャン",
-        "tooltip": "Hush を使わずに models フォルダーまたは Hugging Face キャッシュに追加されたモデルを再スキャンします"
+        "tooltip": "Bishow を使わずに models フォルダーまたは Hugging Face キャッシュに追加されたモデルを再スキャンします"
       }
     },
     "general": {
       "title": "一般",
       "shortcut": {
-        "title": "Hush ショートカット",
+        "title": "Bishow ショートカット",
         "description": "音声録音を開始するキーボードショートカットを設定",
         "loading": "ショートカットを読み込み中…",
         "none": "ショートカットが設定されていません",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "起動時に実行",
-        "description": "コンピューターにログインしたときに Hush を自動的に起動。"
+        "description": "コンピューターにログインしたときに Bishow を自動的に起動。"
       },
       "showTrayIcon": {
         "label": "トレイアイコンを表示",
-        "description": "システムトレイに Hush のアイコンを表示します。"
+        "description": "システムトレイに Bishow のアイコンを表示します。"
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "アプリ別スタイル",
-        "description": "Hushは入力先のアプリに合わせて整形を調整します。スタイルはAI整形がオンのときだけ適用されます。",
+        "description": "Bishowは入力先のアプリに合わせて整形を調整します。スタイルはAI整形がオンのときだけ適用されます。",
         "offNotice": "AI整形がオフのため、これらのスタイルはまだ適用されません。",
         "default": {
           "title": "既定のスタイル",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "キーボード診断",
-        "description": "キーボードイベントが Hush に届いているかを確認します。記録されるのはイベント数のみで、押したキーの内容は記録されません。",
+        "description": "キーボードイベントが Bishow に届いているかを確認します。記録されるのはイベント数のみで、押したキーの内容は記録されません。",
         "run": "10 秒間の診断を実行",
         "running": "待機中… ショートカットを数回押してください (例: Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "マウス",
         "verdictBlocked": "Secure Input がキーイベントをブロックしています。解消されるまで、通常キーを含むショートカットは動作しません。",
         "verdictSuspicious": "修飾キーのイベントは届いていますが、キーイベントは届いていません。Secure Input は無効と報告されているのに、何かがキーを抑制しています。GitHub で報告してください。",
-        "verdictOk": "キーイベントは Hush に正常に届いています。",
+        "verdictOk": "キーイベントは Bishow に正常に届いています。",
         "verdictNoEvents": "イベントを検出できませんでした。テスト中にキーを押しましたか？",
         "failed": "診断に失敗しました: {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "概要",
       "version": {
         "title": "バージョン",
-        "description": "Hush の現在のバージョン"
+        "description": "Bishow の現在のバージョン"
       },
       "appDataDirectory": {
         "title": "アプリデータディレクトリ",
-        "description": "Hush がデータを保存する場所"
+        "description": "Bishow がデータを保存する場所"
       },
       "sourceCode": {
         "title": "ソースコード",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "オンデバイス機械学習推論のための高性能テンソルライブラリ",
-          "details": "Hush のローカルの音声からテキストへの文字起こしは transcribe.cpp と ggml を基盤としています。Georgi Gerganov 氏と貢献者の皆様の素晴らしい仕事に感謝します。"
+          "details": "Bishow のローカルの音声からテキストへの文字起こしは transcribe.cpp と ggml を基盤としています。Georgi Gerganov 氏と貢献者の皆様の素晴らしい仕事に感謝します。"
         }
       },
       "whatsNewUpdates": {
         "label": "新機能を表示",
-        "description": "Hush のアップデート後にリリースノートを表示"
+        "description": "Bishow のアップデート後にリリースノートを表示"
       }
     },
     "snippets": {
       "title": "音声スニペット",
-      "description": "トリガーフレーズを話すと、Hushが展開テキストを入力します。大文字小文字や句読点は区別しないので、「My email.」でも「my email」が発動します。長い文の途中でも使えます。",
+      "description": "トリガーフレーズを話すと、Bishowが展開テキストを入力します。大文字小文字や句読点は区別しないので、「My email.」でも「my email」が発動します。長い文の途中でも使えます。",
       "trigger": "トリガーフレーズ",
       "triggerPlaceholder": "my email",
       "expansion": "展開テキスト",
@@ -738,7 +738,7 @@
     "noOptionsFound": "オプションが見つかりません"
   },
   "accessibility": {
-    "permissionsDescription": "Hush が文字起こしテキストを入力するには、アクセシビリティ権限が必要です。",
+    "permissionsDescription": "Bishow が文字起こしテキストを入力するには、アクセシビリティ権限が必要です。",
     "openSettings": "システム設定を開く"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "アプリの言語",
-    "description": "Hush インターフェースの言語を変更"
+    "description": "Bishow インターフェースの言語を変更"
   },
   "theme": {
     "title": "アプリのテーマ",
-    "description": "Hush をシステムのテーマに合わせるか、ライトまたはダークで固定するかを選択します",
+    "description": "Bishow をシステムのテーマに合わせるか、ライトまたはダークで固定するかを選択します",
     "options": {
       "system": "システム",
       "light": "ライト",
@@ -778,7 +778,7 @@
     "loadingModel": "モデルを読み込み中…"
   },
   "whatsNew": {
-    "title": "Hush v{{version}} の新機能"
+    "title": "Bishow v{{version}} の新機能"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} が1個のショートカットをブロックしている可能性があります",
