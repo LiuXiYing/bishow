@@ -9,7 +9,7 @@ import {
   Cpu,
   TextQuote,
 } from "lucide-react";
-import HushTextLogo from "./icons/HushTextLogo";
+import PenshowTextLogo from "./icons/PenshowTextLogo";
 import WaveIcon from "./icons/WaveIcon";
 import { useSettings } from "../hooks/useSettings";
 import {
@@ -109,7 +109,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <div className="flex flex-col w-40 h-full border-e border-border bg-surface items-center px-2">
-      <HushTextLogo width={112} className="my-4" />
+      <PenshowTextLogo width={112} className="my-4" />
       <div className="flex flex-col w-full items-center gap-0.5 pt-2 border-t border-border">
         {availableSections.map((section) => {
           const Icon = section.icon;

@@ -1,5 +1,5 @@
 /*
- * Bishow design tokens — the single source of truth for colour.
+ * Penshow design tokens — the single source of truth for colour.
  *
  * Every themed value is defined once per scheme below as a semantic
  * `--hush-*` variable. `App.css` registers them as Tailwind colours

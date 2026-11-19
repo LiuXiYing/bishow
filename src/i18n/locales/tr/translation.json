@@ -29,7 +29,7 @@
     "customModelDescription": "Resmi olarak desteklenmiyor",
     "migration": {
       "title": "Modellerinizin güncellenmesi gerekiyor",
-      "description": "Bishow artık daha yeni bir model türü kullanıyor. Transkripsiyona devam etmek için yeni sürümü indirin. Eski sürümler kaldırılacak.",
+      "description": "Penshow artık daha yeni bir model türü kullanıyor. Transkripsiyona devam etmek için yeni sürümü indirin. Eski sürümler kaldırılacak.",
       "replaces": "{{name}} yerine geçer",
       "oldFormat": "Eski format",
       "failed": "İndirme başarısız oldu",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "İzinler Gerekli",
-      "description": "Bishow'nin düzgün çalışabilmesi için birkaç izne ihtiyacı var.",
+      "description": "Penshow'nin düzgün çalışabilmesi için birkaç izne ihtiyacı var.",
       "microphone": {
         "title": "Mikrofon Erişimi",
         "description": "Sesinizi transkripsiyon için alabilmek için gereklidir."
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} aktif modelinizdir. Silmek, yeni bir model seçene kadar transkripsiyonları durduracaktır. Emin misiniz?",
       "deleteTitle": "Modeli Sil",
       "retiredNotice": {
-        "title": "Eski modeller artık Bishow ile çalışmıyor",
+        "title": "Eski modeller artık Penshow ile çalışmıyor",
         "description": "Bilgisayarınızda {{size}} yer kaplıyorlar.",
         "delete": "Modelleri sil",
         "deleted": "Eski modeller silindi",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "Modelleri ada göre ara…",
       "rescan": {
         "label": "Yeniden Tara",
-        "tooltip": "Bishow dışında modeller klasörüne veya Hugging Face önbelleğine eklenen modelleri yeniden tara"
+        "tooltip": "Penshow dışında modeller klasörüne veya Hugging Face önbelleğine eklenen modelleri yeniden tara"
       }
     },
     "general": {
       "title": "Genel",
       "shortcut": {
-        "title": "Bishow Kısayolları",
+        "title": "Penshow Kısayolları",
         "description": "Sesle yazma kaydını başlatmak için klavye kısayollarını yapılandırın",
         "loading": "Kısayollar yükleniyor...",
         "none": "Kısayol yapılandırılmadı",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Başlangıçta Çalıştır",
-        "description": "Bilgisayara giriş yaptığınızda Bishow otomatik olarak başlatılır."
+        "description": "Bilgisayara giriş yaptığınızda Penshow otomatik olarak başlatılır."
       },
       "showTrayIcon": {
         "label": "Tepsi Simgesini Göster",
-        "description": "Bishow simgesini sistem tepsisinde göster."
+        "description": "Penshow simgesini sistem tepsisinde göster."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Uygulamaya göre stiller",
-        "description": "Bishow, düzeltmeyi dikte ettiğiniz uygulamaya göre uyarlar. Stiller yalnızca yapay zekâ düzeltme açıkken uygulanır.",
+        "description": "Penshow, düzeltmeyi dikte ettiğiniz uygulamaya göre uyarlar. Stiller yalnızca yapay zekâ düzeltme açıkken uygulanır.",
         "offNotice": "Yapay zekâ düzeltme kapalı; bu stiller henüz uygulanmıyor.",
         "default": {
           "title": "Varsayılan stil",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Klavye Tanılaması",
-        "description": "Klavye olaylarının Bishow'ye ulaşıp ulaşmadığını denetler. Yalnızca olay sayıları kaydedilir — hangi tuşlara bastığınız asla kaydedilmez.",
+        "description": "Klavye olaylarının Penshow'ye ulaşıp ulaşmadığını denetler. Yalnızca olay sayıları kaydedilir — hangi tuşlara bastığınız asla kaydedilmez.",
         "run": "10 sn'lik tanılamayı çalıştır",
         "running": "Dinleniyor… kısayolunuza birkaç kez basın (ör. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "Fare",
         "verdictBlocked": "Secure Input tuş olaylarını engelliyor — normal tuş içeren kısayollar bu sorun çözülene kadar çalışamaz.",
         "verdictSuspicious": "Değiştirici olayları geldi ancak hiç tuş olayı gelmedi — Secure Input devre dışı görünmesine rağmen bir şey tuşları bastırıyor. Lütfen bunu GitHub'da bildirin.",
-        "verdictOk": "Tuş olayları Bishow'ye normal şekilde ulaşıyor.",
+        "verdictOk": "Tuş olayları Penshow'ye normal şekilde ulaşıyor.",
         "verdictNoEvents": "Hiç olay yakalanmadı — test sırasında herhangi bir tuşa bastınız mı?",
         "failed": "Tanılama başarısız: {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "Hakkında",
       "version": {
         "title": "Sürüm",
-        "description": "Bishow'nin mevcut sürümü"
+        "description": "Penshow'nin mevcut sürümü"
       },
       "appDataDirectory": {
         "title": "Uygulama Veri Dizini",
-        "description": "Bishow'nin verilerini sakladığı konum"
+        "description": "Penshow'nin verilerini sakladığı konum"
       },
       "sourceCode": {
         "title": "Kaynak Kodu",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "Cihaz üzerinde makine öğrenmesi çıkarımı için yüksek performanslı tensör kütüphanesi",
-          "details": "Bishow'nin yerel konuşmadan metne dönüştürme özelliği transcribe.cpp ve ggml üzerine kuruludur. Georgi Gerganov'a ve katkıda bulunanlara harika çalışmaları için teşekkür ederiz."
+          "details": "Penshow'nin yerel konuşmadan metne dönüştürme özelliği transcribe.cpp ve ggml üzerine kuruludur. Georgi Gerganov'a ve katkıda bulunanlara harika çalışmaları için teşekkür ederiz."
         }
       },
       "whatsNewUpdates": {
         "label": "Yenilikleri Göster",
-        "description": "Bishow güncellemelerinden sonra sürüm notlarını göster"
+        "description": "Penshow güncellemelerinden sonra sürüm notlarını göster"
       }
     },
     "snippets": {
       "title": "Sesli parçacıklar",
-      "description": "Bir tetikleyici ifade söyleyin, Bishow açılımını yazsın. Büyük harf ve noktalama fark etmez; \"My email.\" de \"my email\" i tetikler. Uzun cümlelerin içinde de çalışır.",
+      "description": "Bir tetikleyici ifade söyleyin, Penshow açılımını yazsın. Büyük harf ve noktalama fark etmez; \"My email.\" de \"my email\" i tetikler. Uzun cümlelerin içinde de çalışır.",
       "trigger": "Tetikleyici ifade",
       "triggerPlaceholder": "my email",
       "expansion": "Açılım",
@@ -738,7 +738,7 @@
     "noOptionsFound": "Seçenek bulunamadı"
   },
   "accessibility": {
-    "permissionsDescription": "Bishow, transkribe edilen metni yazabilmek için erişilebilirlik izinlerine ihtiyaç duyar.",
+    "permissionsDescription": "Penshow, transkribe edilen metni yazabilmek için erişilebilirlik izinlerine ihtiyaç duyar.",
     "openSettings": "Sistem Ayarlarını Aç"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "Uygulama Dili",
-    "description": "Bishow arayüzünün dilini değiştirin"
+    "description": "Penshow arayüzünün dilini değiştirin"
   },
   "theme": {
     "title": "Uygulama Teması",
-    "description": "Bishow'nin sistem temasını izlemesini ya da açık veya koyu kalmasını seçin",
+    "description": "Penshow'nin sistem temasını izlemesini ya da açık veya koyu kalmasını seçin",
     "options": {
       "system": "Sistem",
       "light": "Açık",
@@ -778,7 +778,7 @@
     "loadingModel": "Model yükleniyor..."
   },
   "whatsNew": {
-    "title": "Bishow v{{version}} yenilikleri"
+    "title": "Penshow v{{version}} yenilikleri"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} 1 kısayolu engelliyor olabilir",

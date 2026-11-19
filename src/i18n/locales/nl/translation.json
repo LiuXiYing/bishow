@@ -16,7 +16,7 @@
     "postProcessing": "AI-opschoning",
     "history": "Geschiedenis",
     "debug": "Probleemoplossing",
-    "about": "Over Bishow",
+    "about": "Over Penshow",
     "snippets": "Snippets"
   },
   "onboarding": {
@@ -29,7 +29,7 @@
     "customModelDescription": "Niet officieel ondersteund",
     "migration": {
       "title": "Je modellen moeten worden bijgewerkt",
-      "description": "Bishow gebruikt nu een nieuwer soort model. Download de nieuwe versie om te blijven transcriberen. Oude versies worden verwijderd.",
+      "description": "Penshow gebruikt nu een nieuwer soort model. Download de nieuwe versie om te blijven transcriberen. Oude versies worden verwijderd.",
       "replaces": "Vervangt {{name}}",
       "oldFormat": "Oud formaat",
       "failed": "Downloaden mislukt",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Machtigingen vereist",
-      "description": "Bishow heeft een aantal machtigingen nodig om goed te kunnen werken.",
+      "description": "Penshow heeft een aantal machtigingen nodig om goed te kunnen werken.",
       "microphone": {
         "title": "Microfoontoegang",
         "description": "Vereist om je stem op te nemen voor transcriptie."
@@ -194,7 +194,7 @@
       "deleteActiveConfirm": "{{modelName}} is je actieve model. Als je dit verwijdert, stoppen de transcripties totdat je een nieuw model selecteert. Weet je het zeker?",
       "deleteTitle": "Model verwijderen",
       "retiredNotice": {
-        "title": "Oude modellen werken niet meer met Bishow",
+        "title": "Oude modellen werken niet meer met Penshow",
         "description": "Ze nemen {{size}} in beslag op je computer.",
         "delete": "Modellen verwijderen",
         "deleted": "Oude modellen verwijderd",
@@ -207,7 +207,7 @@
       },
       "rescan": {
         "label": "Opnieuw scannen",
-        "tooltip": "Scannen naar modellen die buiten Bishow om zijn toegevoegd aan de modellenmap of Hugging Face-cache"
+        "tooltip": "Scannen naar modellen die buiten Penshow om zijn toegevoegd aan de modellenmap of Hugging Face-cache"
       },
       "noModelsMatch": "Geen modellen voldoen aan dit filter."
     },
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Starten bij opstarten",
-        "description": "Bishow automatisch starten zodra je inlogt op je computer."
+        "description": "Penshow automatisch starten zodra je inlogt op je computer."
       },
       "showTrayIcon": {
         "label": "Pictogram in systeemvak tonen",
-        "description": "Toon het Bishow-pictogram in het systeemvak."
+        "description": "Toon het Penshow-pictogram in het systeemvak."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Stijlen per app",
-        "description": "Bishow past de opschoning aan op de app waarin je dicteert. Stijlen gelden alleen als AI-opschoning aan staat.",
+        "description": "Penshow past de opschoning aan op de app waarin je dicteert. Stijlen gelden alleen als AI-opschoning aan staat.",
         "offNotice": "AI-opschoning staat uit, dus deze stijlen worden nog niet toegepast.",
         "default": {
           "title": "Standaardstijl",
@@ -626,7 +626,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Toetsenborddiagnose",
-        "description": "Controleert of toetsenbordgebeurtenissen Bishow bereiken. Alleen het aantal gebeurtenissen wordt vastgelegd — nooit welke toetsen je indrukt.",
+        "description": "Controleert of toetsenbordgebeurtenissen Penshow bereiken. Alleen het aantal gebeurtenissen wordt vastgelegd — nooit welke toetsen je indrukt.",
         "run": "Diagnose van 10 s uitvoeren",
         "running": "Luisteren… druk je sneltoets een paar keer in (bijv. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -640,24 +640,24 @@
         "mouse": "Muis",
         "verdictBlocked": "Secure Input blokkeert toetsgebeurtenissen — sneltoetsen met een gewone toets kunnen pas weer werken als dit is opgelost.",
         "verdictSuspicious": "Er kwamen wel modificatiegebeurtenissen binnen, maar geen toetsgebeurtenissen — iets onderdrukt toetsen terwijl Secure Input als uitgeschakeld wordt gemeld. Meld dit op GitHub.",
-        "verdictOk": "Toetsgebeurtenissen bereiken Bishow normaal.",
+        "verdictOk": "Toetsgebeurtenissen bereiken Penshow normaal.",
         "verdictNoEvents": "Geen gebeurtenissen vastgelegd — heb je tijdens de test toetsen ingedrukt?",
         "failed": "Diagnose mislukt: {{error}}"
       }
     },
     "about": {
-      "title": "Over Bishow",
+      "title": "Over Penshow",
       "version": {
         "title": "Versie",
-        "description": "Huidige versie van Bishow"
+        "description": "Huidige versie van Penshow"
       },
       "whatsNewUpdates": {
         "label": "Toon 'Wat is er nieuw'",
-        "description": "Release-notes tonen nadat Bishow is bijgewerkt"
+        "description": "Release-notes tonen nadat Penshow is bijgewerkt"
       },
       "appDataDirectory": {
         "title": "App-datamap",
-        "description": "Locatie waar Bishow de gegevens opslaat"
+        "description": "Locatie waar Penshow de gegevens opslaat"
       },
       "sourceCode": {
         "title": "Broncode",
@@ -669,13 +669,13 @@
         "ggml": {
           "title": "ggml",
           "description": "Krachtige tensorbibliotheek voor lokale AI-verwerking",
-          "details": "Bishow's lokale spraak-naar-tekst is gebouwd op transcribe.cpp en ggml. Met dank aan het geweldige werk van Georgi Gerganov en alle bijdragers."
+          "details": "Penshow's lokale spraak-naar-tekst is gebouwd op transcribe.cpp en ggml. Met dank aan het geweldige werk van Georgi Gerganov en alle bijdragers."
         }
       }
     },
     "snippets": {
       "title": "Spraaksnippets",
-      "description": "Zeg een triggerzin en Bishow typt de uitbreiding. Hoofdletters en leestekens maken niet uit, dus \"My email.\" activeert \"my email\". Werkt ook midden in een langere zin.",
+      "description": "Zeg een triggerzin en Penshow typt de uitbreiding. Hoofdletters en leestekens maken niet uit, dus \"My email.\" activeert \"my email\". Werkt ook midden in een langere zin.",
       "trigger": "Triggerzin",
       "triggerPlaceholder": "my email",
       "expansion": "Uitbreiding",
@@ -728,7 +728,7 @@
     "portableUpdateBrowseButton": "GitHub Releases openen"
   },
   "whatsNew": {
-    "title": "Nieuw in Bishow v{{version}}"
+    "title": "Nieuw in Penshow v{{version}}"
   },
   "common": {
     "loading": "Laden...",
@@ -741,7 +741,7 @@
     "noOptionsFound": "Geen opties gevonden"
   },
   "accessibility": {
-    "permissionsDescription": "Bishow heeft toegankelijkheidsmachtigingen nodig om getranscribeerde tekst te kunnen typen.",
+    "permissionsDescription": "Penshow heeft toegankelijkheidsmachtigingen nodig om getranscribeerde tekst te kunnen typen.",
     "openSettings": "Systeeminstellingen openen"
   },
   "errors": {
@@ -764,11 +764,11 @@
   },
   "appLanguage": {
     "title": "Interfacetaal",
-    "description": "Wijzig de taal van de Bishow-interface"
+    "description": "Wijzig de taal van de Penshow-interface"
   },
   "theme": {
     "title": "App-thema",
-    "description": "Kies of Bishow het systeemthema volgt of licht of donker blijft",
+    "description": "Kies of Penshow het systeemthema volgt of licht of donker blijft",
     "options": {
       "system": "Systeem",
       "light": "Licht",

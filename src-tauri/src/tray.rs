@@ -444,9 +444,9 @@ pub fn tray_tooltip() -> String {
 
 fn version_label() -> String {
     if cfg!(debug_assertions) {
-        format!("Bishow v{} (Dev)", env!("CARGO_PKG_VERSION"))
+        format!("Penshow v{} (Dev)", env!("CARGO_PKG_VERSION"))
     } else {
-        format!("Bishow v{}", env!("CARGO_PKG_VERSION"))
+        format!("Penshow v{}", env!("CARGO_PKG_VERSION"))
     }
 }
 

@@ -29,7 +29,7 @@
     "customModelDescription": "Nicht offiziell unterstützt",
     "migration": {
       "title": "Deine Modelle brauchen ein Update",
-      "description": "Bishow verwendet jetzt eine neuere Art von Modellen. Lade die neue Version herunter, um weiter zu transkribieren. Alte Versionen werden entfernt.",
+      "description": "Penshow verwendet jetzt eine neuere Art von Modellen. Lade die neue Version herunter, um weiter zu transkribieren. Alte Versionen werden entfernt.",
       "replaces": "Ersetzt {{name}}",
       "oldFormat": "Altes Format",
       "failed": "Download fehlgeschlagen",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "Berechtigungen erforderlich",
-      "description": "Bishow benötigt einige Berechtigungen, um richtig zu funktionieren.",
+      "description": "Penshow benötigt einige Berechtigungen, um richtig zu funktionieren.",
       "microphone": {
         "title": "Mikrofonzugriff",
         "description": "Erforderlich, um deine Stimme für die Transkription zu hören."
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} ist dein aktives Modell. Das Löschen stoppt Transkriptionen, bis du ein neues Modell auswählst. Bist du sicher?",
       "deleteTitle": "Modell löschen",
       "retiredNotice": {
-        "title": "Alte Modelle funktionieren nicht mehr mit Bishow",
+        "title": "Alte Modelle funktionieren nicht mehr mit Penshow",
         "description": "Sie belegen {{size}} auf deinem Computer.",
         "delete": "Modelle löschen",
         "deleted": "Alte Modelle gelöscht",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "Modelle nach Namen suchen…",
       "rescan": {
         "label": "Neu scannen",
-        "tooltip": "Erneut nach Modellen scannen, die außerhalb von Bishow zum Modellordner oder Hugging-Face-Cache hinzugefügt wurden"
+        "tooltip": "Erneut nach Modellen scannen, die außerhalb von Penshow zum Modellordner oder Hugging-Face-Cache hinzugefügt wurden"
       }
     },
     "general": {
       "title": "Allgemein",
       "shortcut": {
-        "title": "Bishow-Tastenkürzel",
+        "title": "Penshow-Tastenkürzel",
         "description": "Tastenkürzel für die Sprachaufnahme konfigurieren",
         "loading": "Tastenkürzel werden geladen...",
         "none": "Keine Tastenkürzel konfiguriert",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "Beim Start ausführen",
-        "description": "Bishow automatisch beim Anmelden starten."
+        "description": "Penshow automatisch beim Anmelden starten."
       },
       "showTrayIcon": {
         "label": "Taskleistensymbol anzeigen",
-        "description": "Das Bishow-Symbol in der Taskleiste anzeigen."
+        "description": "Das Penshow-Symbol in der Taskleiste anzeigen."
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "Stile pro App",
-        "description": "Bishow passt die Bereinigung an die App an, in die du diktierst. Stile gelten nur bei aktivierter KI-Bereinigung.",
+        "description": "Penshow passt die Bereinigung an die App an, in die du diktierst. Stile gelten nur bei aktivierter KI-Bereinigung.",
         "offNotice": "KI-Bereinigung ist aus, daher werden diese Stile noch nicht angewendet.",
         "default": {
           "title": "Standardstil",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "Tastatur-Diagnose",
-        "description": "Prüft, ob Tastaturereignisse Bishow erreichen. Es wird nur die Anzahl der Ereignisse erfasst — niemals, welche Tasten du drückst.",
+        "description": "Prüft, ob Tastaturereignisse Penshow erreichen. Es wird nur die Anzahl der Ereignisse erfasst — niemals, welche Tasten du drückst.",
         "run": "10-Sekunden-Diagnose starten",
         "running": "Lauscht… drücke dein Tastenkürzel ein paar Mal (z. B. Option+Space)",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "Maus",
         "verdictBlocked": "Secure Input blockiert Tastenereignisse — Tastenkürzel mit einer normalen Taste können erst wieder funktionieren, wenn das behoben ist.",
         "verdictSuspicious": "Es kamen Modifikator-Ereignisse an, aber keine Tastenereignisse — irgendetwas unterdrückt Tasten, obwohl Secure Input als deaktiviert gemeldet wird. Bitte melde das auf GitHub.",
-        "verdictOk": "Tastenereignisse erreichen Bishow normal.",
+        "verdictOk": "Tastenereignisse erreichen Penshow normal.",
         "verdictNoEvents": "Keine Ereignisse erfasst — hast du während des Tests Tasten gedrückt?",
         "failed": "Diagnose fehlgeschlagen: {{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "Info",
       "version": {
         "title": "Version",
-        "description": "Aktuelle Version von Bishow"
+        "description": "Aktuelle Version von Penshow"
       },
       "appDataDirectory": {
         "title": "App-Datenverzeichnis",
-        "description": "Speicherort der Bishow-Daten"
+        "description": "Speicherort der Penshow-Daten"
       },
       "sourceCode": {
         "title": "Quellcode",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "Hochleistungs-Inferenz des Whisper-Spracherkennungsmodells von OpenAI",
-          "details": "Bishow verwendet ggml für schnelle, lokale Sprach-zu-Text-Verarbeitung. Dank an Georgi Gerganov und die Mitwirkenden für ihre großartige Arbeit."
+          "details": "Penshow verwendet ggml für schnelle, lokale Sprach-zu-Text-Verarbeitung. Dank an Georgi Gerganov und die Mitwirkenden für ihre großartige Arbeit."
         }
       },
       "whatsNewUpdates": {
         "label": "Neuerungen anzeigen",
-        "description": "Versionshinweise nach Bishow-Updates anzeigen"
+        "description": "Versionshinweise nach Penshow-Updates anzeigen"
       }
     },
     "snippets": {
       "title": "Sprach-Textbausteine",
-      "description": "Sag eine Auslösephrase und Bishow tippt den Textbaustein. Groß-/Kleinschreibung und Satzzeichen spielen keine Rolle: „My email.“ löst „my email“ aus. Funktioniert auch mitten im Satz.",
+      "description": "Sag eine Auslösephrase und Penshow tippt den Textbaustein. Groß-/Kleinschreibung und Satzzeichen spielen keine Rolle: „My email.“ löst „my email“ aus. Funktioniert auch mitten im Satz.",
       "trigger": "Auslösephrase",
       "triggerPlaceholder": "my email",
       "expansion": "Textbaustein",
@@ -738,7 +738,7 @@
     "noOptionsFound": "Keine Optionen gefunden"
   },
   "accessibility": {
-    "permissionsDescription": "Bishow benötigt Bedienungshilfen-Berechtigungen, um transkribierten Text einzugeben.",
+    "permissionsDescription": "Penshow benötigt Bedienungshilfen-Berechtigungen, um transkribierten Text einzugeben.",
     "openSettings": "Systemeinstellungen öffnen"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "Anwendungssprache",
-    "description": "Sprache der Bishow-Oberfläche ändern"
+    "description": "Sprache der Penshow-Oberfläche ändern"
   },
   "theme": {
     "title": "Anwendungsdesign",
-    "description": "Wählen Sie, ob Bishow dem Systemthema folgt oder hell bzw. dunkel bleibt",
+    "description": "Wählen Sie, ob Penshow dem Systemthema folgt oder hell bzw. dunkel bleibt",
     "options": {
       "system": "System",
       "light": "Hell",
@@ -778,7 +778,7 @@
     "loadingModel": "Modell wird geladen..."
   },
   "whatsNew": {
-    "title": "Neu in Bishow v{{version}}"
+    "title": "Neu in Penshow v{{version}}"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} blockiert möglicherweise 1 Tastenkürzel",

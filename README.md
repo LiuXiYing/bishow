@@ -1,4 +1,4 @@
-<h1 align="center">笔受 · Bishow</h1>
+<h1 align="center">笔受 · Penshow</h1>
 
 <p align="center"><strong>闻其言，成其文。</strong></p>
 
@@ -14,13 +14,13 @@
 
 ## 关于 / About
 
-Bishow（笔受）是一个 macOS 语音听写应用：按住快捷键说话，松开后文字会直接输入到当前应用。语音识别在本地运行；可选启用 AI 润色，修正标点、去掉口头禅，并按应用场景调整语气。
+Penshow（笔受）是一个 macOS 语音听写应用：按住快捷键说话，松开后文字会直接输入到当前应用。语音识别在本地运行；可选启用 AI 润色，修正标点、去掉口头禅，并按应用场景调整语气。
 
-Bishow is a macOS push-to-talk dictation app. Speech recognition runs locally on your Mac, and an optional AI clean-up step can fix punctuation, remove filler words and match the tone of the app you are typing into.
+Penshow is a macOS push-to-talk dictation app. Speech recognition runs locally on your Mac, and an optional AI clean-up step can fix punctuation, remove filler words and match the tone of the app you are typing into.
 
 ## 来源与署名 / Attribution
 
-Bishow 基于开源项目 **Hush** 开发，在此明确说明原始项目与作者：
+Penshow 基于开源项目 **Hush** 开发，在此明确说明原始项目与作者：
 
 - 原始项目：**Hush**
 - 仓库：[https://github.com/DeepanshuPal/hush](https://github.com/DeepanshuPal/hush)
@@ -28,22 +28,22 @@ Bishow 基于开源项目 **Hush** 开发，在此明确说明原始项目与作
 - 许可证：MIT
 - 原始版权：Copyright (c) 2026 Deepanshu Pal
 
-Bishow 保留了原始项目的 MIT 许可证、版权声明和第三方组件许可。Bishow 与 Hush 原作者没有隶属关系，也未获得其背书；Hush 的名称、图标和原始文案归原作者所有。更多说明见 [ATTRIBUTION.md](ATTRIBUTION.md)、[LICENSE](LICENSE) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+Penshow 保留了原始项目的 MIT 许可证、版权声明和第三方组件许可。Penshow 与 Hush 原作者没有隶属关系，也未获得其背书；Hush 的名称、图标和原始文案归原作者所有。更多说明见 [ATTRIBUTION.md](ATTRIBUTION.md)、[LICENSE](LICENSE) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ## 当前状态
 
-这是 Bishow 的初始版本，基于 Hush 1.1.0，并完成了以下调整：
+这是 Penshow 的初始版本，基于 Hush 1.1.0，并完成了以下调整：
 
 - 修复中文听写因按空格计词而被跳过 AI 润色的问题
 - 更换为中式应用图标：宣纸、墨色书吏、朱砂印章与毛笔
 - 界面改为「宣纸 + 墨 + 朱砂」配色，标题使用中文宋体回退
-- 应用内品牌文案更新为 Bishow
+- 应用内品牌文案更新为 Penshow
 
 网站以及 bundle identifier（仍为 `com.hush.software`，以便沿用已有配置和已下载模型）会在后续重新开发中逐步替换。
 
 ## 下载
 
-从 [Releases](https://github.com/LiuXiYing/bishow/releases) 下载最新的 Apple Silicon DMG。
+从 [Releases](https://github.com/LiuXiYing/penshow/releases) 下载最新的 Apple Silicon DMG。
 
 - 支持 macOS 13 及以上、Apple Silicon（M1 及后续）
 - 首次打开若被 Gatekeeper 拦截：右键点击 App → **打开**，或到 **系统设置 → 隐私与安全性** 点 **仍要打开**
@@ -64,8 +64,8 @@ Bishow 保留了原始项目的 MIT 许可证、版权声明和第三方组件�
 需要 macOS、Xcode Command Line Tools、Rust、Bun 和 CMake：
 
 ```bash
-git clone https://github.com/LiuXiYing/bishow.git
-cd bishow
+git clone https://github.com/LiuXiYing/penshow.git
+cd penshow
 bun install
 CMAKE_POLICY_VERSION_MINIMUM=3.5 bun run tauri dev
 ```
@@ -94,9 +94,9 @@ git merge upstream/main
 | ------------ | -------------------------------------------------- |
 | `src/`       | 界面（React、TypeScript、Tailwind）                |
 | `src-tauri/` | 核心（Rust、Tauri）：音频、语音识别、AI 润色、粘贴 |
-| `website/`   | 上游网站源码（Next.js），尚未针对 Bishow 修改      |
+| `website/`   | 上游网站源码（Next.js），尚未针对 Penshow 修改     |
 | `docs/`      | 文档与图片                                         |
 
 ## 许可证
 
-Bishow 以 [MIT License](LICENSE) 发布。原始项目 Hush © 2026 Deepanshu Pal；Bishow 的修改 © 2026 Bishow contributors。第三方字体、语音模型等组件的许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+Penshow 以 [MIT License](LICENSE) 发布。原始项目 Hush © 2026 Deepanshu Pal；Penshow 的修改 © 2026 Penshow contributors。第三方字体、语音模型等组件的许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

@@ -29,7 +29,7 @@
     "customModelDescription": "非官方支持",
     "migration": {
       "title": "您的模型需要更新",
-      "description": "Bishow 现在使用一种更新的模型类型。请下载新版本以继续转录。旧版本将被移除。",
+      "description": "Penshow 现在使用一种更新的模型类型。请下载新版本以继续转录。旧版本将被移除。",
       "replaces": "替代 {{name}}",
       "oldFormat": "旧格式",
       "failed": "下载失败",
@@ -70,7 +70,7 @@
     },
     "permissions": {
       "title": "需要权限",
-      "description": "Bishow 需要一些权限才能正常工作。",
+      "description": "Penshow 需要一些权限才能正常工作。",
       "microphone": {
         "title": "麦克风访问",
         "description": "需要听取您的语音进行转录。"
@@ -131,7 +131,7 @@
       "deleteActiveConfirm": "{{modelName}} 是您当前使用的模型。删除后将停止转录，直到您选择新的模型。确定要删除吗？",
       "deleteTitle": "删除模型",
       "retiredNotice": {
-        "title": "旧模型已无法在 Bishow 中使用",
+        "title": "旧模型已无法在 Penshow 中使用",
         "description": "它们占用了您电脑上 {{size}} 的空间。",
         "delete": "删除模型",
         "deleted": "已删除旧模型",
@@ -148,13 +148,13 @@
       "searchPlaceholder": "按名称搜索模型…",
       "rescan": {
         "label": "重新扫描",
-        "tooltip": "重新扫描在 Bishow 之外添加到模型文件夹或 Hugging Face 缓存中的模型"
+        "tooltip": "重新扫描在 Penshow 之外添加到模型文件夹或 Hugging Face 缓存中的模型"
       }
     },
     "general": {
       "title": "通用",
       "shortcut": {
-        "title": "Bishow 快捷键",
+        "title": "Penshow 快捷键",
         "description": "配置启动语音转文字录制的键盘快捷键",
         "loading": "加载快捷键中...",
         "none": "未配置快捷键",
@@ -282,11 +282,11 @@
       },
       "autostart": {
         "label": "开机启动",
-        "description": "登录计算机时自动启动 Bishow。"
+        "description": "登录计算机时自动启动 Penshow。"
       },
       "showTrayIcon": {
         "label": "显示托盘图标",
-        "description": "在系统托盘中显示 Bishow 图标。"
+        "description": "在系统托盘中显示 Penshow 图标。"
       },
       "overlay": {
         "style": {
@@ -482,7 +482,7 @@
       },
       "styles": {
         "title": "按应用设置风格",
-        "description": "Bishow 会根据你正在听写的应用调整润色方式。风格仅在开启 AI 润色时生效。",
+        "description": "Penshow 会根据你正在听写的应用调整润色方式。风格仅在开启 AI 润色时生效。",
         "offNotice": "AI 润色已关闭，因此这些风格暂不生效。",
         "default": {
           "title": "默认风格",
@@ -612,7 +612,7 @@
       },
       "keyboardDiagnostic": {
         "title": "键盘诊断",
-        "description": "检查键盘事件是否能到达 Bishow。仅记录事件数量，绝不记录您按了哪些键。",
+        "description": "检查键盘事件是否能到达 Penshow。仅记录事件数量，绝不记录您按了哪些键。",
         "run": "运行 10 秒诊断",
         "running": "正在监听… 请按几次您的快捷键（例如 Option+Space）",
         "secureInputLabel": "Secure Input",
@@ -626,7 +626,7 @@
         "mouse": "鼠标",
         "verdictBlocked": "Secure Input 正在阻止按键事件——在问题解决前，包含普通按键的快捷键无法工作。",
         "verdictSuspicious": "收到了修饰键事件，但没有按键事件——尽管 Secure Input 报告为已禁用，仍有程序在抑制按键。请在 GitHub 上反馈此问题。",
-        "verdictOk": "按键事件正常到达 Bishow。",
+        "verdictOk": "按键事件正常到达 Penshow。",
         "verdictNoEvents": "未捕获到任何事件——测试期间您按过键吗？",
         "failed": "诊断失败：{{error}}"
       },
@@ -649,11 +649,11 @@
       "title": "关于",
       "version": {
         "title": "版本",
-        "description": "Bishow 的当前版本"
+        "description": "Penshow 的当前版本"
       },
       "appDataDirectory": {
         "title": "应用数据目录",
-        "description": "Bishow 存储数据的位置"
+        "description": "Penshow 存储数据的位置"
       },
       "sourceCode": {
         "title": "源代码",
@@ -665,17 +665,17 @@
         "ggml": {
           "title": "ggml",
           "description": "OpenAI Whisper 自动语音识别模型的高性能推理",
-          "details": "Bishow 使用 ggml 进行快速的本地语音转文字处理。感谢 Georgi Gerganov 和贡献者们的出色工作。"
+          "details": "Penshow 使用 ggml 进行快速的本地语音转文字处理。感谢 Georgi Gerganov 和贡献者们的出色工作。"
         }
       },
       "whatsNewUpdates": {
         "label": "显示新功能",
-        "description": "Bishow 更新后显示发行说明"
+        "description": "Penshow 更新后显示发行说明"
       }
     },
     "snippets": {
       "title": "语音片段",
-      "description": "说出触发短语，Bishow 会输入对应的展开内容。大小写和标点不影响匹配，所以 “My email.” 也会触发 “my email”。在长句中同样有效。",
+      "description": "说出触发短语，Penshow 会输入对应的展开内容。大小写和标点不影响匹配，所以 “My email.” 也会触发 “my email”。在长句中同样有效。",
       "trigger": "触发短语",
       "triggerPlaceholder": "my email",
       "expansion": "展开内容",
@@ -738,7 +738,7 @@
     "noOptionsFound": "未找到选项"
   },
   "accessibility": {
-    "permissionsDescription": "Bishow 需要辅助功能权限才能输入转录的文字。",
+    "permissionsDescription": "Penshow 需要辅助功能权限才能输入转录的文字。",
     "openSettings": "打开系统设置"
   },
   "errors": {
@@ -761,11 +761,11 @@
   },
   "appLanguage": {
     "title": "应用语言",
-    "description": "更改 Bishow 界面的语言"
+    "description": "更改 Penshow 界面的语言"
   },
   "theme": {
     "title": "应用主题",
-    "description": "选择 Bishow 跟随系统主题，还是保持浅色或深色",
+    "description": "选择 Penshow 跟随系统主题，还是保持浅色或深色",
     "options": {
       "system": "跟随系统",
       "light": "浅色",
@@ -778,7 +778,7 @@
     "loadingModel": "正在加载模型..."
   },
   "whatsNew": {
-    "title": "Bishow v{{version}} 新功能"
+    "title": "Penshow v{{version}} 新功能"
   },
   "secureInput": {
     "blockedWithCulprit_one": "{{name}} 可能正在阻止 1 个快捷键",
