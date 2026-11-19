@@ -888,7 +888,7 @@ pub const LEGACY_HUSH_CLEANUP_PROMPT: &str = "You clean up dictated text. The te
 fn default_post_process_prompts() -> Vec<LLMPrompt> {
     vec![LLMPrompt {
         id: HUSH_CLEANUP_PROMPT_ID.to_string(),
-        name: "Penshow clean-up".to_string(),
+        name: "笔受润色".to_string(),
         prompt: HUSH_CLEANUP_PROMPT.to_string(),
     }]
 }

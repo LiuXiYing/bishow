@@ -173,7 +173,7 @@ fn render_cleanup_prompt(template: &str, settings: &AppSettings, ctx: &CleanupCo
         .as_ref()
         .map(|a| a.name.trim())
         .filter(|n| !n.is_empty())
-        .unwrap_or("the active app");
+        .unwrap_or("当前应用");
     let words = custom_words_for_prompt(&settings.custom_words);
 
     let mut prompt = template.to_string();
