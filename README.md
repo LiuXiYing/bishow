@@ -1,161 +1,95 @@
+<h1 align="center">笔受 · Bishow</h1>
+
+<p align="center"><strong>闻其言，成其文。</strong></p>
+
 <p align="center">
-  <a href="https://www.hush.software"><img src="docs/images/hush-banner.png" alt="Hush: dictation that stays on your Mac" width="720"></a>
+  按住一个键说话，松开即把文字输入到当前应用。<br>
+  语音识别在 Mac 本地完成，可选接入你自己配置的 AI 服务做润色。
 </p>
 
-<h3 align="center">Free, private push-to-talk dictation for the Mac.</h3>
-
 <p align="center">
-  Hold a key, speak, let go: your words are typed into whatever app you're using.<br>
-  Speech recognition runs entirely on your Mac. No account, no subscription, no word limits.
-</p>
-
-<p align="center">
-  <a href="https://github.com/DeepanshuPal/downloads#hush"><img alt="Latest release" src="https://img.shields.io/github/v/release/DeepanshuPal/downloads?filter=hush-v*&sort=semver&label=release&color=7a2e3a"></a>
   <img alt="macOS, Apple Silicon" src="https://img.shields.io/badge/macOS-Apple%20Silicon-333">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-333"></a>
-  <a href="https://github.com/DeepanshuPal/hush/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/DeepanshuPal/hush/ci.yml?branch=main&label=CI"></a>
 </p>
 
-<p align="center">
-  <a href="https://www.hush.software/download"><strong>Download for Mac</strong></a> ·
-  <a href="https://www.hush.software">Website</a> ·
-  <a href="https://www.hush.software/compare">Compare</a> ·
-  <a href="https://www.hush.software/roadmap">Roadmap</a> ·
-  <a href="https://github.com/DeepanshuPal/hush/discussions">Discussions</a>
-</p>
+## 关于 / About
 
-## Why Hush
+Bishow（笔受）是一个 macOS 语音听写应用：按住快捷键说话，松开后文字会直接输入到当前应用。语音识别在本地运行；可选启用 AI 润色，修正标点、去掉口头禅，并按应用场景调整语气。
 
-Hush aims to be the best free alternative to paid dictation apps like Wispr Flow.
+Bishow is a macOS push-to-talk dictation app. Speech recognition runs locally on your Mac, and an optional AI clean-up step can fix punctuation, remove filler words and match the tone of the app you are typing into.
 
-|                          | **Hush**       | Wispr Flow         | Superwhisper | Apple Dictation |
-| ------------------------ | -------------- | ------------------ | ------------ | --------------- |
-| Price                    | **Free**       | $15/mo             | $8.49/mo     | Free            |
-| Free version             | **Everything** | 2,000 words a week | Local models | Everything      |
-| Open source              | **MIT**        | No                 | No           | No              |
-| Account                  | **Not needed** | Required           | Not needed   | –               |
-| Audio sent to a server   | **Never**      | Always             | By default   | Sometimes       |
-| Works offline            | **Yes**        | No                 | Yes          | Partly          |
-| Usage analytics          | **None**       | Yes                | Yes          | Opt-in          |
-| Live preview as you talk | **Yes**        | No                 | Yes          | –               |
+## 来源与署名 / Attribution
 
-Every cell is checked against each app's own site (– means it isn't stated there); sources and the full table (Intel Macs, Windows, iPhone, power features) are on [hush.software/compare](https://www.hush.software/compare).
+Bishow 基于开源项目 **Hush** 开发，在此明确说明原始项目与作者：
 
-## Features
+- 原始项目：**Hush**
+- 仓库：[https://github.com/DeepanshuPal/hush](https://github.com/DeepanshuPal/hush)
+- 作者：Deepanshu Pal
+- 许可证：MIT
+- 原始版权：Copyright (c) 2026 Deepanshu Pal
 
-- **Push to talk anywhere.** Hold <kbd>Fn</kbd> (or any shortcut you choose) to
-  dictate into any text field. Tap (or double-tap) to keep recording
-  hands-free, and press <kbd>Esc</kbd> to cancel.
-- **Paste last transcript.** <kbd>Ctrl</kbd>+<kbd>Cmd</kbd>+<kbd>V</kbd> pastes
-  your most recent dictation again; it's also in the menu bar.
-- **On-device speech recognition.** Pick Fast (Parakeet V3), Live preview
-  (Nemotron Streaming) or Most accurate (Granite Speech 4.1), or any of the
-  other open models. They run locally with Metal acceleration; Hush downloads
-  the model once and works offline from then on.
-- **Live preview.** Streaming models show your words in the overlay as you speak.
-- **AI clean-up (optional).** Fix punctuation, drop "um"s and self-corrections,
-  and keep your custom words spelled right, using an AI provider you choose:
-  Groq, OpenAI, Anthropic, OpenRouter, Apple Intelligence, or any
-  OpenAI-compatible endpoint such as a local Ollama server. Bring your own key.
-- **Styles per app.** Casual in Slack, professional in Mail, exact identifiers
-  in your code editor, or no AI at all in a given app. Add any app you use.
-- **Voice snippets.** Say "my email" and Hush types your address. Capitals and
-  punctuation don't matter, and snippets work in the middle of a sentence.
-- **Custom vocabulary** for names and jargon, and automatic filler-word removal
-  that works without AI.
-- **Your music pauses while you dictate** and resumes afterwards (or lower the
-  volume, mute, or leave it alone).
-- **History** of recent dictations, with audio, so you can copy or re-run them.
-- **Native feel.** Menu bar app, light and dark mode, and an interface in 26
-  languages.
+Bishow 保留了原始项目的 MIT 许可证、版权声明和第三方组件许可。Bishow 与 Hush 原作者没有隶属关系，也未获得其背书；Hush 的名称、图标和原始文案归原作者所有。更多说明见 [ATTRIBUTION.md](ATTRIBUTION.md)、[LICENSE](LICENSE) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-## Install
+## 当前状态
 
-1. Download the latest DMG from [hush.software](https://hush.software) or from
-   [GitHub](https://github.com/DeepanshuPal/downloads#hush), which also lists
-   each file's SHA-256 checksum.
-   Builds are currently for Apple Silicon Macs (M1 and later).
-2. Open the DMG and drag **Hush** to **Applications**.
-3. Open Hush and follow the setup: grant Microphone and Accessibility access
-   (Accessibility is what lets Hush type into other apps), then pick a speech
-   model.
+这是 Bishow 的初始 fork 快照，基于 Hush 1.1.0，并修复了中文听写因按空格计词而被跳过 AI 润色的问题。应用内部分文案、网站以及 bundle identifier（仍为 `com.hush.software`，以便沿用已有配置和已下载模型）会在后续重新开发中逐步替换。
 
-### "Hush can't be opened" / unidentified developer
+## 下载
 
-Hush is not yet signed with an Apple Developer ID, so macOS Gatekeeper blocks
-the first launch. To open it:
+从 [Releases](https://github.com/LiuXiYing/bishow/releases) 下载最新的 Apple Silicon DMG。
 
-- **Right-click** (or Control-click) Hush in Applications and choose **Open**,
-  then **Open** again in the dialog.
-- On macOS 15 and later, if that doesn't offer an Open button: try to open Hush
-  once, then go to **System Settings → Privacy & Security**, scroll down and
-  click **Open Anyway**.
+- 支持 macOS 13 及以上、Apple Silicon（M1 及后续）
+- 首次打开若被 Gatekeeper 拦截：右键点击 App → **打开**，或到 **系统设置 → 隐私与安全性** 点 **仍要打开**
+- 应用为 ad-hoc 签名，覆盖安装后可能需要在「辅助功能」中重新授权
 
-You only need to do this once per install. Signed and notarized builds are
-planned.
+## 功能
 
-## Privacy: what leaves your Mac
+- **按住即说**：按住 <kbd>Fn</kbd> 或自定义快捷键，在任意输入框听写；支持双击保持录音
+- **本地识别**：Parakeet、Nemotron、Granite 等模型在本地运行，Metal 加速，可离线
+- **可选 AI 润色**：支持 OpenAI 兼容接口（DeepSeek、OpenAI、Ollama 等）以及 Anthropic、Groq 等服务
+- **按应用设置风格**：在 Slack 里口语化、在邮件里正式、在编辑器里保留标识符
+- **自定义词汇与语音片段**：名字、术语和常用地址可以一次配置、随说随用
+- **历史记录**：保存最近的听写文本和音频，可复制或重新处理
+- **26 种界面语言**，支持浅色/深色模式
 
-Hush has no telemetry, analytics, crash reporting or account. Only two things
-ever go over the network:
+## 从源码构建
 
-1. **Model downloads.** When you choose a speech model, Hush downloads it from
-   Hugging Face (or, for two older Whisper models, from the Hush downloads
-   mirror on GitHub). Your audio is never uploaded.
-2. **AI clean-up text, only if you turn it on.** When AI clean-up is enabled,
-   the _text_ of each dictation (never the audio), your custom words, and the
-   name of the app you're dictating into are sent to the provider you
-   configured, using your API key. With AI clean-up off (the default), nothing
-   you say leaves your Mac. Choose Apple Intelligence or a local endpoint to keep
-   clean-up on-device too.
-
-Your recordings, history and settings stay in
-`~/Library/Application Support/com.hush.software/`. Release builds never write
-transcript text to the log files.
-
-## Troubleshooting
-
-Shortcuts stopped working, Accessibility keeps asking after an update, or text lands in the wrong place? See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md). Something else? [Open an issue](https://github.com/DeepanshuPal/hush/issues).
-
-## Build from source
-
-You need macOS, Xcode Command Line Tools, Rust, Bun and CMake:
+需要 macOS、Xcode Command Line Tools、Rust、Bun 和 CMake：
 
 ```bash
-git clone https://github.com/DeepanshuPal/hush.git
-cd hush
+git clone https://github.com/LiuXiYing/bishow.git
+cd bishow
 bun install
 CMAKE_POLICY_VERSION_MINIMUM=3.5 bun run tauri dev
 ```
 
-See [BUILD.md](BUILD.md) for release builds and details. What changed in each version: [CHANGELOG.md](CHANGELOG.md).
+打包 Apple Silicon DMG：
 
-Hush is built with [Tauri](https://tauri.app) (Rust + React/TypeScript) and
-[transcribe.cpp](https://github.com/handy-computer/transcribe.cpp) /
-[ggml](https://github.com/ggml-org/ggml) for on-device speech recognition.
+```bash
+CMAKE_POLICY_VERSION_MINIMUM=3.5 bun run tauri build --target aarch64-apple-darwin --bundles dmg
+```
 
-## Repository layout
+生成位置：`src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/`。更多细节见 [BUILD.md](BUILD.md)。
 
-| Folder       | What it is                                                                                         |
-| ------------ | -------------------------------------------------------------------------------------------------- |
-| `src/`       | The app's interface (React, TypeScript, Tailwind)                                                  |
-| `src-tauri/` | The app's core (Rust, Tauri): audio, speech recognition, AI clean-up, paste                        |
-| `website/`   | [hush.software](https://www.hush.software) (Next.js). See [`website/README.md`](website/README.md) |
-| `docs/`      | README images and the [troubleshooting guide](docs/TROUBLESHOOTING.md)                             |
+## 与上游同步
 
-The app and the website share the same design language: cream surfaces, a burgundy accent and a serif display face.
+```bash
+git remote add upstream https://github.com/DeepanshuPal/hush.git
+git fetch upstream
+git merge upstream/main
+```
 
-## Contributing
+原始项目的完整 README 保留在 [README.upstream.md](README.upstream.md)，供参考。
 
-Bug reports, translations and pull requests are welcome. Read
-[CONTRIBUTING.md](CONTRIBUTING.md) to get started, and
-[CONTRIBUTING_TRANSLATIONS.md](CONTRIBUTING_TRANSLATIONS.md) to help with a
-language.
+## 目录结构
 
-Bugs: [issues](https://github.com/DeepanshuPal/hush/issues). Questions and ideas: [discussions](https://github.com/DeepanshuPal/hush/discussions). Security problems: see [SECURITY.md](SECURITY.md). Everyone taking part follows the [code of conduct](CODE_OF_CONDUCT.md).
+| 目录         | 内容                                               |
+| ------------ | -------------------------------------------------- |
+| `src/`       | 界面（React、TypeScript、Tailwind）                |
+| `src-tauri/` | 核心（Rust、Tauri）：音频、语音识别、AI 润色、粘贴 |
+| `website/`   | 上游网站源码（Next.js），尚未针对 Bishow 修改      |
+| `docs/`      | 文档与图片                                         |
 
-## License
+## 许可证
 
-Hush is released under the [MIT License](LICENSE). Bundled fonts and the speech
-models Hush can download have their own licenses; see
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Bishow 以 [MIT License](LICENSE) 发布。原始项目 Hush © 2026 Deepanshu Pal；Bishow 的修改 © 2026 Bishow contributors。第三方字体、语音模型等组件的许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
