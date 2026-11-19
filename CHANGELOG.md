@@ -11,9 +11,9 @@ First Penshow release, based on Hush 1.1.0. Penshow is an independent fork; see
   whitespace-separated tokens, so a Chinese sentence without spaces was treated
   as one word and skipped the provider. Han characters now count at roughly two
   per word, while English behavior is unchanged.
-- **New Chinese-style identity.** A simplified scribe icon (rice paper, ink,
-  cinnabar seal and brush), plus a rice-paper/ink/cinnabar palette and Chinese
-  serif fallbacks for display text.
+- **New Chinese-style identity.** An illustrated scholar icon (rice paper,
+  ink and cinnabar), plus a rice-paper/ink/cinnabar palette and Chinese serif
+  fallbacks for display text.
 - **Rebranded app.** The bundle, window title, menu bar label and in-app copy
   now say Penshow. The bundle identifier remains `com.hush.software` for this
   release so existing settings and downloaded models keep working.

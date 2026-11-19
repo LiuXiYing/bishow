@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/penshow-icon-1024.png" width="128" alt="Penshow 笔受">
+</p>
+
 <h1 align="center">笔受 · Penshow</h1>
 
 <p align="center"><strong>闻其言，成其文。</strong></p>

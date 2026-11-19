@@ -9,8 +9,9 @@ import { Button } from "../../ui/Button";
 import { AppDataDirectory } from "../AppDataDirectory";
 import { ShowWhatsNewOnUpdate } from "../ShowWhatsNewOnUpdate";
 import { LogDirectory } from "../debug";
+import penshowLogo from "../../../assets/penshow-logo.png";
 
-const HUSH_REPO_URL = "https://github.com/DeepanshuPal/hush";
+const PENSHOW_REPO_URL = "https://github.com/LiuXiYing/penshow";
 
 export const AboutSettings: React.FC = () => {
   const { t } = useTranslation();
@@ -31,6 +32,16 @@ export const AboutSettings: React.FC = () => {
 
   return (
     <div className="max-w-3xl w-full mx-auto space-y-6">
+      <div className="flex flex-col items-center gap-2 pt-2">
+        <img
+          src={penshowLogo}
+          alt=""
+          aria-hidden="true"
+          width={96}
+          className="h-24 w-24 select-none"
+          draggable={false}
+        />
+      </div>
       <PageHeader title={t("settings.about.title")} />
       <SettingsGroup>
         <SettingContainer
@@ -52,7 +63,7 @@ export const AboutSettings: React.FC = () => {
           <Button
             variant="secondary"
             size="md"
-            onClick={() => openUrl(HUSH_REPO_URL)}
+            onClick={() => openUrl(PENSHOW_REPO_URL)}
           >
             {t("settings.about.sourceCode.button")}
           </Button>
