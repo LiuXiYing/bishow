@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Hush. Downloads are on [GitHub](https://github.com/DeepanshuPal/downloads#hush) and [hush.software](https://www.hush.software/download). What's coming next: [roadmap](https://www.hush.software/roadmap).
+All notable changes to Penshow. Downloads are on [GitHub Releases](https://github.com/LiuXiYing/penshow/releases).
 
 ## Penshow 1.1.0 (2026-11-19)
 
@@ -14,6 +14,14 @@ First Penshow release, based on Hush 1.1.0. Penshow is an independent fork; see
 - **New Chinese-style identity.** An illustrated scholar icon (rice paper,
   ink and cinnabar), plus a rice-paper/ink/cinnabar palette and Chinese serif
   fallbacks for display text.
+- **Chinese-first defaults.** The speech-model list now hides models that don't
+  understand Chinese, Qwen3-ASR 1.7B is the featured pick, and the built-in
+  clean-up prompt is a Chinese prompt (existing untouched English defaults are
+  upgraded; edited prompts are left alone).
+- **Mainland-China AI providers only.** The clean-up provider list now offers
+  DeepSeek, Kimi, 智谱 GLM, 阿里云百炼, 硅基流动, 火山方舟 and a custom
+  OpenAI-compatible endpoint. Model names can be typed or fetched from the
+  provider's `/models` endpoint.
 - **Rebranded app.** The bundle, window title, menu bar label and in-app copy
   now say Penshow. The bundle identifier remains `com.hush.software` for this
   release so existing settings and downloaded models keep working.

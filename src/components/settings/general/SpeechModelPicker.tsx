@@ -12,11 +12,13 @@ import Badge from "../../ui/Badge";
  * The three speech models most people should choose between. Each is the
  * catalog repo; the default quantization of that repo is what gets picked,
  * unless the user already has another quantization of it downloaded.
+ *
+ * All three understand Chinese: Penshow does not offer models that can't.
  */
 const CHOICES = [
   {
     key: "fast",
-    repo: "handy-computer/parakeet-tdt-0.6b-v3-gguf/",
+    repo: "handy-computer/Qwen3-ASR-0.6B-gguf/",
   },
   {
     key: "live",
@@ -24,7 +26,7 @@ const CHOICES = [
   },
   {
     key: "accurate",
-    repo: "handy-computer/granite-speech-4.1-2b-gguf/",
+    repo: "handy-computer/Qwen3-ASR-1.7B-gguf/",
   },
 ] as const;
 
@@ -121,8 +123,8 @@ export const SpeechModelPicker: React.FC = () => {
           const progress = downloadProgress[model.id]?.percentage;
           const isDownloading = !!downloadingModels[model.id];
           const recommended =
-            key === "fast" ||
-            (key === "accurate" && memoryGb >= ACCURATE_MIN_MEMORY_GB);
+            key === "accurate" ||
+            (key === "fast" && memoryGb < ACCURATE_MIN_MEMORY_GB);
           return (
             <button
               key={key}

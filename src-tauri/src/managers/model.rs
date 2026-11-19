@@ -852,6 +852,13 @@ impl ModelManager {
             let models = self.available_models.lock().unwrap();
             models.values().cloned().collect()
         };
+        // Penshow is a Chinese-first dictation app, so models that declare a
+        // language set without Chinese are not offered at all. Models with no
+        // language metadata (custom files, older probes) stay: they may work.
+        list.retain(|m| {
+            m.supported_languages.is_empty()
+                || m.supported_languages.iter().any(|code| code == "zh")
+        });
         // Stable, reasonable order: catalog editorial rank first (lower = higher
         // priority), then any other recommended model, then by accuracy, speed,
         // and name. `ModelInfo` doesn't carry rank, so resolve it by id from the

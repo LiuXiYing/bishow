@@ -125,15 +125,11 @@ pub(crate) struct CleanupContext {
 
 fn style_instruction(style: AppStyle) -> &'static str {
     match style {
-        AppStyle::Default | AppStyle::Raw => "natural; keep the speaker's own tone",
-        AppStyle::Message => {
-            "casual and short, like a chat message; add no greeting or sign-off that was not spoken"
-        }
-        AppStyle::Email => {
-            "professional, in short paragraphs; put a spoken greeting and sign-off on their own lines"
-        }
+        AppStyle::Default | AppStyle::Raw => "自然，保留说话人原本的语气",
+        AppStyle::Message => "口语、简短，像聊天消息；不要添加说话人没有说过的问候或结束语",
+        AppStyle::Email => "专业，使用简短段落；把口述的问候语和结束语单独成行",
         AppStyle::Code => {
-            "technical; keep code identifiers, file names, commands, symbols and their casing exactly as spoken, and do not reword technical terms"
+            "技术内容；代码标识符、文件名、命令、符号及其大小写保持原样，不要改写技术术语"
         }
     }
 }
@@ -141,7 +137,7 @@ fn style_instruction(style: AppStyle) -> &'static str {
 fn level_instruction(level: CleanupLevel) -> &'static str {
     match level {
         CleanupLevel::Medium => {
-            "Exception: you may tighten wordy phrasing and drop repetition, as long as every point the speaker made is kept. "
+            "例外：可以收紧啰嗦的表达并删除重复内容，但必须保留说话人表达的每一个要点。"
         }
         CleanupLevel::None | CleanupLevel::Light => "",
     }
@@ -182,10 +178,20 @@ fn render_cleanup_prompt(template: &str, settings: &AppSettings, ctx: &CleanupCo
 
     let mut prompt = template.to_string();
     if words.is_empty() {
-        prompt = prompt.replace(
-            "Spell these terms exactly when they are spoken: ${custom_words}. ",
-            "",
-        );
+        const ENGLISH_SENTENCE: &str =
+            "Spell these terms exactly when they are spoken: ${custom_words}. ";
+        if prompt.contains(ENGLISH_SENTENCE) {
+            prompt = prompt.replace(ENGLISH_SENTENCE, "");
+        } else {
+            // Prompts written for other languages (the built-in one is Chinese)
+            // carry the vocabulary placeholder on its own line: drop that line
+            // so no dangling label is left behind.
+            prompt = prompt
+                .lines()
+                .filter(|line| !line.contains("${custom_words}"))
+                .collect::<Vec<_>>()
+                .join("\n");
+        }
     }
     let had_style = prompt.contains("${style}");
     let had_level = prompt.contains("${level}");
@@ -200,7 +206,7 @@ fn render_cleanup_prompt(template: &str, settings: &AppSettings, ctx: &CleanupCo
         extra.push_str(level_instruction(ctx.level));
     }
     if !had_style && ctx.style != AppStyle::Default {
-        extra.push_str(&format!("Tone: {}.", style_instruction(ctx.style)));
+        extra.push_str(&format!("语气：{}。", style_instruction(ctx.style)));
     }
     if !extra.is_empty() {
         prompt = match TRANSCRIPT_BLOCK_RE.find(&prompt).map(|m| m.start()) {
@@ -1202,12 +1208,12 @@ mod tests {
             &settings,
             &ctx(AppStyle::Message, CleanupLevel::Light),
         );
-        assert!(prompt.contains("typed into Slack"));
-        assert!(prompt.contains("spoken: Hush, Tauri."));
-        assert!(prompt.contains("Tone: casual and short"));
+        assert!(prompt.contains("输入到 Slack 中"));
+        assert!(prompt.contains("必须严格按此拼写输出：Hush, Tauri。"));
+        assert!(prompt.contains("输出风格：口语、简短"));
         assert!(prompt.contains("${output}"));
         assert!(!prompt.contains("${style}") && !prompt.contains("${level}"));
-        assert!(!prompt.contains("tighten"));
+        assert!(!prompt.contains("收紧"));
     }
 
     #[test]
@@ -1218,8 +1224,8 @@ mod tests {
             &settings,
             &ctx(AppStyle::Default, CleanupLevel::Medium),
         );
-        assert!(!prompt.contains("Spell these terms"));
-        assert!(prompt.contains("tighten wordy phrasing"));
+        assert!(!prompt.contains("必须严格按此拼写输出"));
+        assert!(prompt.contains("收紧啰嗦的表达"));
     }
 
     #[test]
@@ -1230,7 +1236,7 @@ mod tests {
             &settings,
             &ctx(AppStyle::Email, CleanupLevel::Light),
         );
-        let style_at = prompt.find("Tone: professional").expect("style appended");
+        let style_at = prompt.find("语气：专业").expect("style appended");
         assert!(style_at < prompt.find("<transcript>").unwrap());
     }
 
@@ -1245,7 +1251,7 @@ mod tests {
         let system = build_system_prompt(HUSH_CLEANUP_PROMPT);
         assert!(!system.contains("${output}"));
         assert!(!system.contains("</transcript>"));
-        assert!(system.ends_with("output nothing."));
+        assert!(system.ends_with("不输出任何内容。"));
     }
 
     #[test]
